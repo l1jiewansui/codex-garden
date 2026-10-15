@@ -21,7 +21,7 @@
 | 同名 `.zip.sha256` | 对照下载文件的完整性 |
 | GitHub 自动生成的 Source code | 源代码，不是可以双击使用的安装包 |
 
-仓库目前为私有。如果看到 404，请确认已登录获得仓库访问权限的 GitHub 账号。
+如果下载页面暂时无法打开，可从[仓库的 Releases 列表](https://github.com/l1jiewansui/codex-garden/releases)进入对应版本。
 
 ## 方式一：解压即用
 

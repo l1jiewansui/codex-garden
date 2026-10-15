@@ -18,7 +18,7 @@
 
 <img src="docs/screenshots/welcome.png" alt="首次使用：阅读数据用途说明后点击开始种菜" width="360">
 
-当前候选版部分界面仍显示“青云菜园”，开始菜单名称为 **Qingyun Garden**，它们都是本项目。完整的安装、升级、卸载和可选插件接入步骤见[安装部署手册](docs/INSTALL.md)。
+当前版本沿用旧称“青云菜园”，开始菜单名称为 **Qingyun Garden**。安装、升级、卸载和可选插件接入步骤见[安装部署手册](docs/INSTALL.md)。
 
 ## 怎么照料这片菜园
 
@@ -69,11 +69,11 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/metrics/star-history-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="docs/metrics/star-history.svg">
-    <img alt="手绘风 Star History，每天记录真实的 Star 数量。" src="docs/metrics/star-history.svg" width="900">
+    <img alt="codex-garden Star History" src="docs/metrics/star-history.svg" width="900">
   </picture>
 </a>
 
-图表采用 Star History 常见的 xkcd 手绘风，并适配深色与浅色主题。每天更新，数据从首次记录开始积累，不补造过去的曲线。仓库目前为私有，图表仍可正常显示；下载和 Star 需要相应的仓库访问权限。
+Star 数量每日更新，历史从 2026 年 10 月 15 日开始记录。
 
 ---
 
