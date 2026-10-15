@@ -1,0 +1,2131 @@
+{
+  "frameSize": 28,
+  "frames": 3,
+  "varieties": 3,
+  "rootY": 28,
+  "palette": [
+    "25252f",
+    "36343a",
+    "4b3936",
+    "60443a",
+    "7b5740",
+    "9b6c47",
+    "bb8e5c",
+    "b47b5f",
+    "d99d73",
+    "f0c295",
+    "f5d7ad",
+    "706c55",
+    "9b9874",
+    "c3ba8b",
+    "e3d5a9",
+    "f6eac3",
+    "263f35",
+    "35553b",
+    "4c6f3e",
+    "6a8b48",
+    "91ac58",
+    "bdd078",
+    "26374b",
+    "37536a",
+    "4d7387",
+    "77a0ae",
+    "b0c9c7",
+    "243f44",
+    "34636b",
+    "548e91",
+    "8cb6ad",
+    "6b393d",
+    "93464a",
+    "bc6261",
+    "e38d7c",
+    "895a30",
+    "b57b35",
+    "dca04a",
+    "f5c86c",
+    "ffe3a3",
+    "686575",
+    "90879d",
+    "b8a7bb",
+    "ae7683",
+    "d49b9c",
+    "f0c1ae",
+    "f7f1dc"
+  ],
+  "records": [
+    {
+      "name": "plant-0-0-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-0-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-0-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-0-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 47
+    },
+    {
+      "name": "plant-0-0-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-0-0-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 47
+    },
+    {
+      "name": "plant-0-0-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 76
+    },
+    {
+      "name": "plant-0-0-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-0-0-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 76
+    },
+    {
+      "name": "plant-0-0-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 176
+    },
+    {
+      "name": "plant-0-0-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 177
+    },
+    {
+      "name": "plant-0-0-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 176
+    },
+    {
+      "name": "plant-0-1-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-1-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-1-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-1-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 47
+    },
+    {
+      "name": "plant-0-1-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-0-1-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 47
+    },
+    {
+      "name": "plant-0-1-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 97
+    },
+    {
+      "name": "plant-0-1-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 99
+    },
+    {
+      "name": "plant-0-1-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 97
+    },
+    {
+      "name": "plant-0-1-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 221
+    },
+    {
+      "name": "plant-0-1-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 224
+    },
+    {
+      "name": "plant-0-1-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 221
+    },
+    {
+      "name": "plant-0-2-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-2-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-2-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-0-2-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 47
+    },
+    {
+      "name": "plant-0-2-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-0-2-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 47
+    },
+    {
+      "name": "plant-0-2-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 84
+    },
+    {
+      "name": "plant-0-2-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 85
+    },
+    {
+      "name": "plant-0-2-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 84
+    },
+    {
+      "name": "plant-0-2-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 173
+    },
+    {
+      "name": "plant-0-2-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 181
+    },
+    {
+      "name": "plant-0-2-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 173
+    },
+    {
+      "name": "plant-1-0-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-0-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-0-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-0-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-1-0-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-1-0-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-1-0-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-1-0-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-1-0-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-1-0-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 177
+    },
+    {
+      "name": "plant-1-0-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 175
+    },
+    {
+      "name": "plant-1-0-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 177
+    },
+    {
+      "name": "plant-1-1-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-1-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-1-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-1-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-1-1-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-1-1-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-1-1-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 99
+    },
+    {
+      "name": "plant-1-1-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 100
+    },
+    {
+      "name": "plant-1-1-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 99
+    },
+    {
+      "name": "plant-1-1-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 233
+    },
+    {
+      "name": "plant-1-1-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 228
+    },
+    {
+      "name": "plant-1-1-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 233
+    },
+    {
+      "name": "plant-1-2-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-2-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-2-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-1-2-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-1-2-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-1-2-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 49
+    },
+    {
+      "name": "plant-1-2-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 85
+    },
+    {
+      "name": "plant-1-2-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 83
+    },
+    {
+      "name": "plant-1-2-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 85
+    },
+    {
+      "name": "plant-1-2-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 212
+    },
+    {
+      "name": "plant-1-2-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 208
+    },
+    {
+      "name": "plant-1-2-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 212
+    },
+    {
+      "name": "plant-2-0-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-0-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-0-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-0-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-2-0-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 45
+    },
+    {
+      "name": "plant-2-0-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-2-0-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-2-0-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 76
+    },
+    {
+      "name": "plant-2-0-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-2-0-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 175
+    },
+    {
+      "name": "plant-2-0-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 173
+    },
+    {
+      "name": "plant-2-0-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 175
+    },
+    {
+      "name": "plant-2-1-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-1-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-1-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-1-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-2-1-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 45
+    },
+    {
+      "name": "plant-2-1-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-2-1-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 100
+    },
+    {
+      "name": "plant-2-1-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 100
+    },
+    {
+      "name": "plant-2-1-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 3,
+      "opaquePixels": 100
+    },
+    {
+      "name": "plant-2-1-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 235
+    },
+    {
+      "name": "plant-2-1-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 232
+    },
+    {
+      "name": "plant-2-1-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 235
+    },
+    {
+      "name": "plant-2-2-0-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-2-0-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-2-0-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 12
+    },
+    {
+      "name": "plant-2-2-1-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-2-2-1-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 45
+    },
+    {
+      "name": "plant-2-2-1-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 2,
+      "opaquePixels": 48
+    },
+    {
+      "name": "plant-2-2-2-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 83
+    },
+    {
+      "name": "plant-2-2-2-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 79
+    },
+    {
+      "name": "plant-2-2-2-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 83
+    },
+    {
+      "name": "plant-2-2-3-0",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 183
+    },
+    {
+      "name": "plant-2-2-3-1",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 176
+    },
+    {
+      "name": "plant-2-2-3-2",
+      "size": [
+        28,
+        28
+      ],
+      "sourceRect": [
+        0,
+        0,
+        112,
+        112
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 183
+    },
+    {
+      "name": "tilled-earth",
+      "size": [
+        36,
+        14
+      ],
+      "sourceRect": [
+        0,
+        0,
+        144,
+        56
+      ],
+      "alphaValues": [
+        255
+      ],
+      "opaqueColors": 5,
+      "opaquePixels": 504
+    }
+  ],
+  "sha256": {
+    "crops.png": "2b65f3db1fb1eb8947c63d00a6b4e46d11f6791c16a4df84fb2c4a6634db14c2",
+    "tilled.png": "bc7d46d7db4754de8f623576ccff0dcd8e539d9df1d8f23feef65ebc4947615d"
+  }
+}

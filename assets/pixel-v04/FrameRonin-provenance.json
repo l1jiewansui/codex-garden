@@ -1,0 +1,10 @@
+{
+  "project": "FrameRonin-MCP",
+  "repository": "https://github.com/GOODDAYDAY/FrameRonin-MCP",
+  "commit": "dc31d2baf9ae32cb3faee6bf84d3456b37993cf7",
+  "license": "MIT",
+  "originalProject": "https://github.com/systemchester/FrameRonin",
+  "originalProjectInspectedCommit": "4472253dbf848289a3631bef4bf4d101f2929490",
+  "actualUse": "FrameRonin proper pixel art cell majority reducer, nearest resize, sprite sheet split/compose, and optional Gemini API generation adapter",
+  "adaptation": "Project-level fixed mesh for each requested output size; preserve alpha and a shared palette; no per-frame independent crop or recenter"
+}

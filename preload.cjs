@@ -1,0 +1,2 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('garden',{snapshot:()=>ipcRenderer.invoke('garden:snapshot'),harvest:(id,plantKind)=>ipcRenderer.invoke('garden:harvest',id,plantKind),open:id=>ipcRenderer.invoke('garden:open',id),window:(action,value)=>ipcRenderer.invoke('garden:window',action,value),geometry:data=>ipcRenderer.send('garden:geometry',data),onCommand:callback=>ipcRenderer.on('garden:command',(_event,command)=>callback(command))});

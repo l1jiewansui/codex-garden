@@ -1,0 +1,884 @@
+{
+  "version": "0.4.1-pixel",
+  "backend": "built-in ImageGen",
+  "images": {
+    "gardeners": "gardeners.png",
+    "gardenKit": "garden-kit.png",
+    "portraits": "portraits.png",
+    "icons8": "icons-8.png",
+    "icons9": "icons-9.png",
+    "icons10": "icons-10.png",
+    "icons12": "icons-12.png",
+    "icons16": "icons-16.png",
+    "digits": "digits.png"
+  },
+  "heroes": [
+    {
+      "id": "gardener-0",
+      "name": "苔芽 · 草帽园丁",
+      "origin": [
+        24,
+        44
+      ],
+      "image": "gardeners",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "file": "idle_000.png",
+          "sourceRect": [
+            0,
+            0,
+            48,
+            48
+          ],
+          "durationMs": 520
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "file": "idle_001.png",
+          "sourceRect": [
+            48,
+            0,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "file": "idle_002.png",
+          "sourceRect": [
+            96,
+            0,
+            48,
+            48
+          ],
+          "durationMs": 160
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "file": "idle_003.png",
+          "sourceRect": [
+            144,
+            0,
+            48,
+            48
+          ],
+          "durationMs": 480
+        },
+        {
+          "action": "cast",
+          "index": 0,
+          "file": "cast_000.png",
+          "sourceRect": [
+            0,
+            48,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "cast",
+          "index": 1,
+          "file": "cast_001.png",
+          "sourceRect": [
+            48,
+            48,
+            48,
+            48
+          ],
+          "durationMs": 220
+        },
+        {
+          "action": "cast",
+          "index": 2,
+          "file": "cast_002.png",
+          "sourceRect": [
+            96,
+            48,
+            48,
+            48
+          ],
+          "durationMs": 240
+        },
+        {
+          "action": "cast",
+          "index": 3,
+          "file": "cast_003.png",
+          "sourceRect": [
+            144,
+            48,
+            48,
+            48
+          ],
+          "durationMs": 300
+        }
+      ],
+      "visualApproved": false,
+      "frameSize": [
+        48,
+        48
+      ],
+      "portrait": {
+        "image": "portraits",
+        "sourceRect": [
+          0,
+          0,
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "gardener-1",
+      "name": "桃枝 · 围巾园丁",
+      "origin": [
+        24,
+        44
+      ],
+      "image": "gardeners",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "file": "idle_000.png",
+          "sourceRect": [
+            0,
+            96,
+            48,
+            48
+          ],
+          "durationMs": 520
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "file": "idle_001.png",
+          "sourceRect": [
+            48,
+            96,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "file": "idle_002.png",
+          "sourceRect": [
+            96,
+            96,
+            48,
+            48
+          ],
+          "durationMs": 160
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "file": "idle_003.png",
+          "sourceRect": [
+            144,
+            96,
+            48,
+            48
+          ],
+          "durationMs": 480
+        },
+        {
+          "action": "cast",
+          "index": 0,
+          "file": "cast_000.png",
+          "sourceRect": [
+            0,
+            144,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "cast",
+          "index": 1,
+          "file": "cast_001.png",
+          "sourceRect": [
+            48,
+            144,
+            48,
+            48
+          ],
+          "durationMs": 220
+        },
+        {
+          "action": "cast",
+          "index": 2,
+          "file": "cast_002.png",
+          "sourceRect": [
+            96,
+            144,
+            48,
+            48
+          ],
+          "durationMs": 240
+        },
+        {
+          "action": "cast",
+          "index": 3,
+          "file": "cast_003.png",
+          "sourceRect": [
+            144,
+            144,
+            48,
+            48
+          ],
+          "durationMs": 300
+        }
+      ],
+      "visualApproved": false,
+      "frameSize": [
+        48,
+        48
+      ],
+      "portrait": {
+        "image": "portraits",
+        "sourceRect": [
+          32,
+          0,
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "gardener-2",
+      "name": "雨青 · 蓝帽园丁",
+      "origin": [
+        24,
+        44
+      ],
+      "image": "gardeners",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "file": "idle_000.png",
+          "sourceRect": [
+            0,
+            192,
+            48,
+            48
+          ],
+          "durationMs": 520
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "file": "idle_001.png",
+          "sourceRect": [
+            48,
+            192,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "file": "idle_002.png",
+          "sourceRect": [
+            96,
+            192,
+            48,
+            48
+          ],
+          "durationMs": 160
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "file": "idle_003.png",
+          "sourceRect": [
+            144,
+            192,
+            48,
+            48
+          ],
+          "durationMs": 480
+        },
+        {
+          "action": "cast",
+          "index": 0,
+          "file": "cast_000.png",
+          "sourceRect": [
+            0,
+            240,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "cast",
+          "index": 1,
+          "file": "cast_001.png",
+          "sourceRect": [
+            48,
+            240,
+            48,
+            48
+          ],
+          "durationMs": 220
+        },
+        {
+          "action": "cast",
+          "index": 2,
+          "file": "cast_002.png",
+          "sourceRect": [
+            96,
+            240,
+            48,
+            48
+          ],
+          "durationMs": 240
+        },
+        {
+          "action": "cast",
+          "index": 3,
+          "file": "cast_003.png",
+          "sourceRect": [
+            144,
+            240,
+            48,
+            48
+          ],
+          "durationMs": 300
+        }
+      ],
+      "visualApproved": false,
+      "frameSize": [
+        48,
+        48
+      ],
+      "portrait": {
+        "image": "portraits",
+        "sourceRect": [
+          64,
+          0,
+          32,
+          32
+        ]
+      }
+    },
+    {
+      "id": "gardener-3",
+      "name": "栗果 · 栗发园丁",
+      "origin": [
+        24,
+        44
+      ],
+      "image": "gardeners",
+      "frames": [
+        {
+          "action": "idle",
+          "index": 0,
+          "file": "idle_000.png",
+          "sourceRect": [
+            0,
+            288,
+            48,
+            48
+          ],
+          "durationMs": 520
+        },
+        {
+          "action": "idle",
+          "index": 1,
+          "file": "idle_001.png",
+          "sourceRect": [
+            48,
+            288,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "idle",
+          "index": 2,
+          "file": "idle_002.png",
+          "sourceRect": [
+            96,
+            288,
+            48,
+            48
+          ],
+          "durationMs": 160
+        },
+        {
+          "action": "idle",
+          "index": 3,
+          "file": "idle_003.png",
+          "sourceRect": [
+            144,
+            288,
+            48,
+            48
+          ],
+          "durationMs": 480
+        },
+        {
+          "action": "cast",
+          "index": 0,
+          "file": "cast_000.png",
+          "sourceRect": [
+            0,
+            336,
+            48,
+            48
+          ],
+          "durationMs": 260
+        },
+        {
+          "action": "cast",
+          "index": 1,
+          "file": "cast_001.png",
+          "sourceRect": [
+            48,
+            336,
+            48,
+            48
+          ],
+          "durationMs": 220
+        },
+        {
+          "action": "cast",
+          "index": 2,
+          "file": "cast_002.png",
+          "sourceRect": [
+            96,
+            336,
+            48,
+            48
+          ],
+          "durationMs": 240
+        },
+        {
+          "action": "cast",
+          "index": 3,
+          "file": "cast_003.png",
+          "sourceRect": [
+            144,
+            336,
+            48,
+            48
+          ],
+          "durationMs": 300
+        }
+      ],
+      "visualApproved": false,
+      "frameSize": [
+        48,
+        48
+      ],
+      "portrait": {
+        "image": "portraits",
+        "sourceRect": [
+          96,
+          0,
+          32,
+          32
+        ]
+      }
+    }
+  ],
+  "crops": [
+    [
+      {
+        "sourceRect": [
+          0,
+          0,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          32,
+          0,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          64,
+          0,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          96,
+          0,
+          32,
+          32
+        ]
+      }
+    ],
+    [
+      {
+        "sourceRect": [
+          0,
+          32,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          32,
+          32,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          64,
+          32,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          96,
+          32,
+          32,
+          32
+        ]
+      }
+    ],
+    [
+      {
+        "sourceRect": [
+          0,
+          64,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          32,
+          64,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          64,
+          64,
+          32,
+          32
+        ]
+      },
+      {
+        "sourceRect": [
+          96,
+          64,
+          32,
+          32
+        ]
+      }
+    ]
+  ],
+  "icons": {
+    "sparkle": {
+      "variants": {
+        "8": {
+          "image": "icons8",
+          "sourceRect": [
+            0,
+            0,
+            8,
+            8
+          ]
+        },
+        "9": {
+          "image": "icons9",
+          "sourceRect": [
+            0,
+            0,
+            9,
+            9
+          ]
+        },
+        "10": {
+          "image": "icons10",
+          "sourceRect": [
+            0,
+            0,
+            10,
+            10
+          ]
+        },
+        "12": {
+          "image": "icons12",
+          "sourceRect": [
+            0,
+            0,
+            12,
+            12
+          ]
+        },
+        "16": {
+          "image": "icons16",
+          "sourceRect": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    "care": {
+      "variants": {
+        "8": {
+          "image": "icons8",
+          "sourceRect": [
+            8,
+            0,
+            8,
+            8
+          ]
+        },
+        "9": {
+          "image": "icons9",
+          "sourceRect": [
+            9,
+            0,
+            9,
+            9
+          ]
+        },
+        "10": {
+          "image": "icons10",
+          "sourceRect": [
+            10,
+            0,
+            10,
+            10
+          ]
+        },
+        "12": {
+          "image": "icons12",
+          "sourceRect": [
+            12,
+            0,
+            12,
+            12
+          ]
+        },
+        "16": {
+          "image": "icons16",
+          "sourceRect": [
+            16,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    "seeds": {
+      "variants": {
+        "8": {
+          "image": "icons8",
+          "sourceRect": [
+            16,
+            0,
+            8,
+            8
+          ]
+        },
+        "9": {
+          "image": "icons9",
+          "sourceRect": [
+            18,
+            0,
+            9,
+            9
+          ]
+        },
+        "10": {
+          "image": "icons10",
+          "sourceRect": [
+            20,
+            0,
+            10,
+            10
+          ]
+        },
+        "12": {
+          "image": "icons12",
+          "sourceRect": [
+            24,
+            0,
+            12,
+            12
+          ]
+        },
+        "16": {
+          "image": "icons16",
+          "sourceRect": [
+            32,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    "app": {
+      "variants": {
+        "8": {
+          "image": "icons8",
+          "sourceRect": [
+            24,
+            0,
+            8,
+            8
+          ]
+        },
+        "9": {
+          "image": "icons9",
+          "sourceRect": [
+            27,
+            0,
+            9,
+            9
+          ]
+        },
+        "10": {
+          "image": "icons10",
+          "sourceRect": [
+            30,
+            0,
+            10,
+            10
+          ]
+        },
+        "12": {
+          "image": "icons12",
+          "sourceRect": [
+            36,
+            0,
+            12,
+            12
+          ]
+        },
+        "16": {
+          "image": "icons16",
+          "sourceRect": [
+            48,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  },
+  "notes": [
+    "All active artwork is processed PNG pixel art. Source ImageGen atlases are not loaded by the app.",
+    "Character actions share fixed-size frames and fixed origins; no per-frame body scaling or recentering."
+  ],
+  "sourceSha256": {
+    "gardeners": "d4f10a82fc06b37e0ed26f3c9d674b6754e520cb58dee7aeda5ac8466efdc866",
+    "gardenKit": "a88897b39a83036a940c3d0abec2df7debaaf5788b36d9d3877ed12c2f6b69b6",
+    "portraits": "8bb3c7200c0dc6b10da8e96a29762d1c751965e7beb2f1f915c2a70864c9ac86",
+    "icons8": "b7d00f41315e8f3e4e8d4cea5e3a8dc17c0a3e1fdf1c6d5cbb4c9aaf0b514c5c",
+    "icons9": "79a4df7c746af479ccfdd1ea2d51ddd083ae69209e7417a3cf75d15045b09c10",
+    "icons10": "10c063e16b78c2ac7a028bcf84382bfa2d8f6b9a42c542f7af8740b6cec0ccf5",
+    "icons12": "3b711a0beaf1dc88b34ddc404509c3fbff87e6df33387853b540a7d27291f45c",
+    "icons16": "b4d124fb1546320f7de7f116312f85d9ecc702fc3a56d304edd9690f66d60c5b",
+    "digits": "58173c3fba4902b67628ee9450cf8241c1d9cbe5af4dc730f56185c25694cef7"
+  },
+  "pixelContract": {
+    "style": "Terraria-inspired side-view pixel art",
+    "characterCanvas": [
+      48,
+      48
+    ],
+    "cropCanvas": [
+      32,
+      32
+    ],
+    "paletteHex": [
+      "#25252f",
+      "#36343a",
+      "#4b3936",
+      "#60443a",
+      "#7b5740",
+      "#9b6c47",
+      "#bb8e5c",
+      "#b47b5f",
+      "#d99d73",
+      "#f0c295",
+      "#f5d7ad",
+      "#706c55",
+      "#9b9874",
+      "#c3ba8b",
+      "#e3d5a9",
+      "#f6eac3",
+      "#263f35",
+      "#35553b",
+      "#4c6f3e",
+      "#6a8b48",
+      "#91ac58",
+      "#bdd078",
+      "#26374b",
+      "#37536a",
+      "#4d7387",
+      "#77a0ae",
+      "#b0c9c7",
+      "#243f44",
+      "#34636b",
+      "#548e91",
+      "#8cb6ad",
+      "#6b393d",
+      "#93464a",
+      "#bc6261",
+      "#e38d7c",
+      "#895a30",
+      "#b57b35",
+      "#dca04a",
+      "#f5c86c",
+      "#ffe3a3",
+      "#686575",
+      "#90879d",
+      "#b8a7bb",
+      "#ae7683",
+      "#d49b9c",
+      "#f0c1ae",
+      "#f7f1dc"
+    ],
+    "alpha": "binary-0-or-255",
+    "filter": "nearest",
+    "displayScale": 2,
+    "reducer": "pinned FrameRonin _downsample_proper",
+    "perFrameCrop": false,
+    "sourceArt": "../art-v04/manifest.json"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "records": [
+    {
+      "name": "continuous-garden-ground",
+      "size": [
+        16,
+        14
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        56
+      ],
+      "alphaValues": [
+        255
+      ],
+      "opaqueColors": 7,
+      "opaquePixels": 224
+    },
+    {
+      "name": "fixed-left-farm-supplies",
+      "size": [
+        36,
+        20
+      ],
+      "sourceRect": [
+        0,
+        0,
+        144,
+        80
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 10,
+      "opaquePixels": 268
+    },
+    {
+      "name": "sun-anchor-0",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 124
+    },
+    {
+      "name": "sun-anchor-1",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 116
+    },
+    {
+      "name": "sun-anchor-2",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 116
+    },
+    {
+      "name": "sun-anchor-3",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 124
+    },
+    {
+      "name": "sun-anchor-4",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 116
+    },
+    {
+      "name": "sun-anchor-5",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 116
+    }
+  ],
+  "sha256": "45581ed9fc8f14f6e2117e426329b63c28bdd323b36dc6dbac8b4f20ce4518c7"
+}

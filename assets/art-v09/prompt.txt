@@ -1,0 +1,1 @@
+Reference: assets/pixel-v04/gardeners.png. Built-in ImageGen: four gardeners, empty-handed idle columns1-2, independent watering columns3-5, independent fertilizing columns6-8. Transparent8x4 sheet, single tool per action, stable feet. See conversation for complete prompt.

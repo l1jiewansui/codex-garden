@@ -1,0 +1,391 @@
+{
+  "schema": "xianxia-frameronin-1",
+  "name": "青岚剑修",
+  "size": [
+    64,
+    64
+  ],
+  "sourceFrameSize": [
+    314,
+    314
+  ],
+  "transform": {
+    "scale": 0.17834394904458598,
+    "offset": [
+      4,
+      4
+    ],
+    "contentCanvas": [
+      56,
+      56
+    ],
+    "minimumPadding": 4
+  },
+  "origin": [
+    35.36,
+    59.16
+  ],
+  "unityPivot": [
+    0.5525,
+    0.07562500000000005
+  ],
+  "ppu": 56,
+  "filter": "Point",
+  "alpha": "binary",
+  "palette": [
+    [
+      2,
+      2,
+      3
+    ],
+    [
+      5,
+      7,
+      14
+    ],
+    [
+      5,
+      36,
+      46
+    ],
+    [
+      5,
+      54,
+      65
+    ],
+    [
+      9,
+      16,
+      21
+    ],
+    [
+      9,
+      116,
+      110
+    ],
+    [
+      10,
+      19,
+      34
+    ],
+    [
+      12,
+      91,
+      95
+    ],
+    [
+      17,
+      73,
+      80
+    ],
+    [
+      20,
+      19,
+      27
+    ],
+    [
+      23,
+      25,
+      36
+    ],
+    [
+      25,
+      37,
+      46
+    ],
+    [
+      37,
+      39,
+      45
+    ],
+    [
+      47,
+      46,
+      52
+    ],
+    [
+      65,
+      52,
+      48
+    ],
+    [
+      77,
+      93,
+      84
+    ],
+    [
+      143,
+      180,
+      140
+    ],
+    [
+      150,
+      99,
+      54
+    ],
+    [
+      174,
+      137,
+      84
+    ],
+    [
+      222,
+      197,
+      141
+    ],
+    [
+      247,
+      195,
+      118
+    ],
+    [
+      250,
+      233,
+      189
+    ],
+    [
+      251,
+      217,
+      171
+    ],
+    [
+      251,
+      244,
+      226
+    ]
+  ],
+  "actions": [
+    "idle",
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "frames": [
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 0,
+      "file": "idle_000.png",
+      "durationMs": 180,
+      "sha256": "0d639a6dad7b2aed0ad07d436d9ed37c7f4fa41191cf517c7c510854ff0faa50",
+      "bounds": [
+        13,
+        20,
+        47,
+        59
+      ]
+    },
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 1,
+      "file": "idle_001.png",
+      "durationMs": 180,
+      "sha256": "81921850e62d9224c9d8a2fc74e04297f07c59715e6b5d6780e6cbe97b402951",
+      "bounds": [
+        11,
+        20,
+        47,
+        59
+      ]
+    },
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 2,
+      "file": "idle_002.png",
+      "durationMs": 180,
+      "sha256": "d60dbb506160c95efe1b046de81295d4f8089a2efc2937851e7b5954e623cf93",
+      "bounds": [
+        10,
+        20,
+        44,
+        59
+      ]
+    },
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 3,
+      "file": "idle_003.png",
+      "durationMs": 180,
+      "sha256": "32a3bb5bac08e7ebce6c30cf551d0ce008941d4d8cb6a13d9ea67f5f08bc3c90",
+      "bounds": [
+        10,
+        20,
+        47,
+        59
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 0,
+      "file": "walk_000.png",
+      "durationMs": 140,
+      "sha256": "0d2750996e686615f2148aa541471a78a36d0553920f0a0db836b24c4b582929",
+      "bounds": [
+        12,
+        19,
+        47,
+        59
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 1,
+      "file": "walk_001.png",
+      "durationMs": 140,
+      "sha256": "f8f07dbb59f791e286a3b1b3d71a347a457087e6bf9a551218db8e625439301b",
+      "bounds": [
+        12,
+        19,
+        46,
+        59
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 2,
+      "file": "walk_002.png",
+      "durationMs": 140,
+      "sha256": "c324c02c149b10ee20c819251e0de5b7b9b89beac2c23cc57b238bd4b09bd93c",
+      "bounds": [
+        10,
+        19,
+        45,
+        59
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 3,
+      "file": "walk_003.png",
+      "durationMs": 140,
+      "sha256": "368b99eb01ef2e603b0a5fde6b6ac9aca92c08f84982946605e95690f8f6f69d",
+      "bounds": [
+        11,
+        19,
+        44,
+        59
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 0,
+      "file": "attack_000.png",
+      "durationMs": 120,
+      "sha256": "55c5e53c31e173ea4afa434beedda7d5a169bef5a696c3b14b350ccb3759d765",
+      "bounds": [
+        12,
+        22,
+        51,
+        59
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 1,
+      "file": "attack_001.png",
+      "durationMs": 120,
+      "sha256": "31056d24e40c53d39f8c6a491d18333d025774596c3aadf189b73e5928cf27fa",
+      "bounds": [
+        17,
+        15,
+        49,
+        59
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 2,
+      "file": "attack_002.png",
+      "durationMs": 120,
+      "sha256": "164b2018047cf0f4a68e131cf6f7def58ce181c463f15db07ed23683657dea69",
+      "bounds": [
+        11,
+        23,
+        60,
+        59
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 3,
+      "file": "attack_003.png",
+      "durationMs": 120,
+      "sha256": "83dc539c5d47bed5908b55ab5664d6d16d21450c740208f61f152e595bb8f815",
+      "bounds": [
+        10,
+        21,
+        45,
+        59
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 0,
+      "file": "cast_000.png",
+      "durationMs": 170,
+      "sha256": "4356ff3ac266eafb2b75f5e973a643334e9d559db01f36b59a9e3e1090fda631",
+      "bounds": [
+        12,
+        21,
+        50,
+        59
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 1,
+      "file": "cast_001.png",
+      "durationMs": 170,
+      "sha256": "7258ebaf3b65af1513493879ad00466829df7650ae798af5f62b23acbf0a0f03",
+      "bounds": [
+        12,
+        21,
+        55,
+        59
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 2,
+      "file": "cast_002.png",
+      "durationMs": 170,
+      "sha256": "d496ed158e7571c38db800f4a5280c58cfeddc8a9b769963065994d56c8ce9a2",
+      "bounds": [
+        8,
+        21,
+        60,
+        59
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 3,
+      "file": "cast_003.png",
+      "durationMs": 170,
+      "sha256": "4ee451972f033bf85d7ae61ca12d2e93271951622569b55364797f898b3c98de",
+      "bounds": [
+        10,
+        21,
+        45,
+        59
+      ]
+    }
+  ],
+  "visualApproved": false,
+  "technicalPassed": true
+}

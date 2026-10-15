@@ -1,0 +1,391 @@
+{
+  "schema": "xianxia-frameronin-1",
+  "name": "墨衡 · 玄铁刀修",
+  "size": [
+    64,
+    64
+  ],
+  "sourceFrameSize": [
+    314,
+    314
+  ],
+  "transform": {
+    "scale": 0.17834394904458598,
+    "offset": [
+      4,
+      4
+    ],
+    "contentCanvas": [
+      56,
+      56
+    ],
+    "minimumPadding": 4
+  },
+  "origin": [
+    35.36,
+    57.503184713375795
+  ],
+  "unityPivot": [
+    0.5525,
+    0.1015127388535032
+  ],
+  "ppu": 56,
+  "filter": "Point",
+  "alpha": "binary",
+  "palette": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      5
+    ],
+    [
+      8,
+      4,
+      4
+    ],
+    [
+      8,
+      6,
+      7
+    ],
+    [
+      11,
+      10,
+      12
+    ],
+    [
+      16,
+      10,
+      10
+    ],
+    [
+      17,
+      16,
+      19
+    ],
+    [
+      21,
+      18,
+      20
+    ],
+    [
+      25,
+      23,
+      27
+    ],
+    [
+      28,
+      29,
+      35
+    ],
+    [
+      34,
+      32,
+      37
+    ],
+    [
+      35,
+      16,
+      15
+    ],
+    [
+      40,
+      36,
+      38
+    ],
+    [
+      47,
+      47,
+      54
+    ],
+    [
+      60,
+      55,
+      58
+    ],
+    [
+      81,
+      34,
+      28
+    ],
+    [
+      99,
+      87,
+      80
+    ],
+    [
+      114,
+      54,
+      40
+    ],
+    [
+      172,
+      113,
+      78
+    ],
+    [
+      214,
+      162,
+      121
+    ],
+    [
+      230,
+      198,
+      171
+    ]
+  ],
+  "actions": [
+    "idle",
+    "walk",
+    "attack",
+    "cast"
+  ],
+  "frames": [
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 0,
+      "file": "idle_000.png",
+      "durationMs": 180,
+      "sha256": "dbed06ac0f70c418c03273548d0868bd3f5ab9763dc9d55a3a25c534d21a7a1e",
+      "bounds": [
+        11,
+        23,
+        45,
+        58
+      ]
+    },
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 1,
+      "file": "idle_001.png",
+      "durationMs": 180,
+      "sha256": "5a3f269de9176f7503ac9eaf94324891816cee7b4d8b39134dbfb1b0b7dcea38",
+      "bounds": [
+        11,
+        23,
+        45,
+        58
+      ]
+    },
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 2,
+      "file": "idle_002.png",
+      "durationMs": 180,
+      "sha256": "051ba643febe02451568d624ec2956f8959697448a524fec17cc88fff0397fca",
+      "bounds": [
+        10,
+        23,
+        49,
+        58
+      ]
+    },
+    {
+      "action": "idle",
+      "row": 0,
+      "index": 3,
+      "file": "idle_003.png",
+      "durationMs": 180,
+      "sha256": "c7d2bff718a5013ff1dd0c31813fe70addd3720e065e0e0c1ca4ce0ad7db005f",
+      "bounds": [
+        10,
+        23,
+        46,
+        58
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 0,
+      "file": "walk_000.png",
+      "durationMs": 145,
+      "sha256": "3e666367b40cc01b33c9a03ec841c5ad83ecd09a8f601910d7bdc97a25b5dce6",
+      "bounds": [
+        9,
+        22,
+        46,
+        58
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 1,
+      "file": "walk_001.png",
+      "durationMs": 145,
+      "sha256": "ef5a79b03ea5ac55f805ce3dabcd28087b04f8af8689dad88595c703a1228d53",
+      "bounds": [
+        11,
+        22,
+        45,
+        58
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 2,
+      "file": "walk_002.png",
+      "durationMs": 145,
+      "sha256": "6100880cf4ac05464e1d437e82f27ac38201fe9c3549e42b3a4e1bac25b92f30",
+      "bounds": [
+        9,
+        22,
+        46,
+        58
+      ]
+    },
+    {
+      "action": "walk",
+      "row": 1,
+      "index": 3,
+      "file": "walk_003.png",
+      "durationMs": 145,
+      "sha256": "7aead9869c2d6f99afcc76bb12db5bf1f38f80eba9912996f68b57321fec7a89",
+      "bounds": [
+        11,
+        22,
+        44,
+        58
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 0,
+      "file": "attack_000.png",
+      "durationMs": 145,
+      "sha256": "1cf06bed71811886cdc6bb63ff3959d8392bae9b516a440383c273693e985e2c",
+      "bounds": [
+        11,
+        24,
+        46,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 1,
+      "file": "attack_001.png",
+      "durationMs": 145,
+      "sha256": "473ee196ad1f392138661207e07b7f276520e2df4e99ebc878311ffad5cf6c00",
+      "bounds": [
+        14,
+        13,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 2,
+      "file": "attack_002.png",
+      "durationMs": 145,
+      "sha256": "c9dedffcbc04c29ac1ffe070b204159d74c7b674e0f9d840c113907e1f0b8f5d",
+      "bounds": [
+        10,
+        25,
+        57,
+        58
+      ]
+    },
+    {
+      "action": "attack",
+      "row": 2,
+      "index": 3,
+      "file": "attack_003.png",
+      "durationMs": 145,
+      "sha256": "beef1099bb2e75fabbab4dfe27876d84d840d80e948d960e1dc12b1aa19aab16",
+      "bounds": [
+        10,
+        24,
+        45,
+        57
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 0,
+      "file": "cast_000.png",
+      "durationMs": 180,
+      "sha256": "f4cb4b88faf5894c719de0adf626dbf6aa38e08703d0b6a6e956b53f24411afd",
+      "bounds": [
+        10,
+        24,
+        46,
+        58
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 1,
+      "file": "cast_001.png",
+      "durationMs": 180,
+      "sha256": "5b7472f4872784e149cc44e0673397061e914f61ee4296fd33ab26f7df1d441f",
+      "bounds": [
+        9,
+        24,
+        49,
+        58
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 2,
+      "file": "cast_002.png",
+      "durationMs": 180,
+      "sha256": "3dff9cfe7dffaa8f635e85e6580a2f94f4af2923015ee45c4c13ac5187ab1720",
+      "bounds": [
+        8,
+        24,
+        48,
+        58
+      ]
+    },
+    {
+      "action": "cast",
+      "row": 3,
+      "index": 3,
+      "file": "cast_003.png",
+      "durationMs": 180,
+      "sha256": "d2c3555e09ab0a5755b3d2cfd3c5461e7f72017f12235e1947f4687d9a63a5c9",
+      "bounds": [
+        10,
+        24,
+        45,
+        58
+      ]
+    }
+  ],
+  "visualApproved": false,
+  "technicalPassed": true
+}

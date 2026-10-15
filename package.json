@@ -1,0 +1,20 @@
+{
+  "name": "codex-garden",
+  "version": "0.10.0-rc.1",
+  "private": true,
+  "description": "本地 Codex 对话像素菜园",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "python -m unittest discover -s tests -v && node tests/world.test.cjs && node tests/desktop.test.cjs && node tests/update.test.cjs",
+    "pack": "python tools/package.py",
+    "postinstall": "install-electron",
+    "qa": "electron . --qa"
+  },
+  "devDependencies": {
+    "electron": "44.7.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

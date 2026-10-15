@@ -1,0 +1,326 @@
+{
+  "frames": [
+    {
+      "id": "gardener-0/idle_000.png",
+      "bounds": [
+        38,
+        40,
+        171,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/idle_001.png",
+      "bounds": [
+        33,
+        40,
+        165,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/idle_002.png",
+      "bounds": [
+        34,
+        40,
+        166,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/idle_003.png",
+      "bounds": [
+        31,
+        40,
+        163,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/cast_000.png",
+      "bounds": [
+        34,
+        41,
+        171,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/cast_001.png",
+      "bounds": [
+        33,
+        41,
+        173,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/cast_002.png",
+      "bounds": [
+        33,
+        41,
+        171,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-0/cast_003.png",
+      "bounds": [
+        30,
+        41,
+        170,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/idle_000.png",
+      "bounds": [
+        39,
+        35,
+        157,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/idle_001.png",
+      "bounds": [
+        40,
+        35,
+        156,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/idle_002.png",
+      "bounds": [
+        38,
+        35,
+        153,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/idle_003.png",
+      "bounds": [
+        38,
+        35,
+        152,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/cast_000.png",
+      "bounds": [
+        42,
+        32,
+        160,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/cast_001.png",
+      "bounds": [
+        40,
+        32,
+        177,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/cast_002.png",
+      "bounds": [
+        38,
+        32,
+        173,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-1/cast_003.png",
+      "bounds": [
+        39,
+        32,
+        175,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/idle_000.png",
+      "bounds": [
+        39,
+        30,
+        167,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/idle_001.png",
+      "bounds": [
+        39,
+        30,
+        167,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/idle_002.png",
+      "bounds": [
+        37,
+        30,
+        164,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/idle_003.png",
+      "bounds": [
+        37,
+        30,
+        163,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/cast_000.png",
+      "bounds": [
+        41,
+        30,
+        169,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/cast_001.png",
+      "bounds": [
+        39,
+        30,
+        176,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/cast_002.png",
+      "bounds": [
+        38,
+        30,
+        172,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-2/cast_003.png",
+      "bounds": [
+        37,
+        30,
+        173,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/idle_000.png",
+      "bounds": [
+        37,
+        35,
+        165,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/idle_001.png",
+      "bounds": [
+        34,
+        35,
+        162,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/idle_002.png",
+      "bounds": [
+        32,
+        35,
+        160,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/idle_003.png",
+      "bounds": [
+        34,
+        35,
+        160,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/cast_000.png",
+      "bounds": [
+        37,
+        29,
+        164,
+        188
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/cast_001.png",
+      "bounds": [
+        33,
+        29,
+        175,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/cast_002.png",
+      "bounds": [
+        32,
+        29,
+        172,
+        192
+      ],
+      "edgeTouch": false
+    },
+    {
+      "id": "gardener-3/cast_003.png",
+      "bounds": [
+        33,
+        32,
+        171,
+        192
+      ],
+      "edgeTouch": false
+    }
+  ],
+  "edgeTouches": 0,
+  "validation": "Technical alpha/rect checks, not a substitute for visual animation review"
+}

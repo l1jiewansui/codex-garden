@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');const {hitTest,bounded,WIDTH,HEIGHT,EXPANDED}=require('../desktop-model.cjs');
+const mask={x:0,y:0,width:3,height:2,scale:2,pixels:Buffer.from([0,1,0,0,0,0])};
+assert.equal(hitTest({x:0,y:0},[],mask),false);assert.equal(hitTest({x:2,y:0},[],mask),true);assert.equal(hitTest({x:2,y:2},[],mask),false);assert.equal(hitTest({x:100,y:100},[],mask),false);
+assert.equal(hitTest({x:10,y:10},[{x:8,y:8,width:10,height:10}],mask),true);assert.equal(hitTest({x:18,y:18},[{x:8,y:8,width:10,height:10}],mask),false);
+assert.deepEqual(bounded({x:-100,y:300,width:420,height:150},{x:0,y:0,width:1920,height:1080}),{x:0,y:300,width:420,height:150});assert.equal(bounded({x:2000,y:2000,width:420,height:150},{x:0,y:0,width:1920,height:1080}).y,930);assert.equal(WIDTH,420);assert.equal(HEIGHT,150);assert.equal(EXPANDED,470);
+console.log('Desktop hit-test: transparent pixels pass through, opaque pixels and controls respond; monitor bounds passed.');
+const {stepWalker}=require('../web/model.js');
+assert.equal(stepWalker(30,112,.1),34.8);assert.equal(stepWalker(111,112,.1),112);assert.equal(stepWalker(22,-100,.1),22);assert.equal(stepWalker(194,999,.1),194);assert.equal(stepWalker(100,30,.1),95.2);
+let x=30;for(let i=0;i<100;i++)x=stepWalker(x,112,.04);assert.equal(x,112);
+const {geometry}=require('../web/model.js');assert.equal(geometry.cropY+geometry.cropHeight,geometry.surfaceY);assert.equal(geometry.surfaceY+14,geometry.soilBottom);assert(geometry.interactionOffset>=16);
+const {stepWorld,followCamera}=require('../web/model.js');assert.equal(stepWorld(500,1000,.1),504.8);assert.equal(stepWorld(-500,-1000,.1),-504.8);assert.equal(followCamera(300,0),150);assert.equal(followCamera(-200,0),-250);assert.equal(followCamera(100,0),0);
+const {secretPlant}=require('../web/model.js');const found=[];for(let i=0;i<256;i++){const a=secretPlant('test-'+i,'turn-1');assert.equal(a,secretPlant('test-'+i,'turn-1'));if(a!==null){assert(a>=0&&a<4);found.push(a);}}assert(found.length>0&&found.length<40);assert.equal(new Set(found).size,4);

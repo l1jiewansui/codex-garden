@@ -1,0 +1,262 @@
+[
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/annotated-types/annotated_types-0.8.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "anyio",
+    "version": "4.15.1",
+    "license": "MIT",
+    "files": [
+      "licenses/python/anyio/anyio-4.15.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/attrs/attrs-26.1.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "license": "MPL-2.0",
+    "files": [
+      "licenses/python/certifi/certifi-2026.7.22.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license": "MIT-0",
+    "files": [
+      "licenses/python/cffi/cffi-2.1.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/click/click-8.5.0.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.2",
+    "license": "Apache-2.0 OR BSD-3-Clause",
+    "files": [
+      "licenses/python/cryptography/cryptography-50.0.2.dist-info/licenses/LICENSE",
+      "licenses/python/cryptography/cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+      "licenses/python/cryptography/cryptography-50.0.2.dist-info/licenses/LICENSE.BSD"
+    ]
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/h11/h11-0.16.0.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "httpcore",
+    "version": "1.0.9",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/httpcore/httpcore-1.0.9.dist-info/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "name": "httpx",
+    "version": "0.28.1",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/httpx/httpx-0.28.1.dist-info/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "name": "httpx-sse",
+    "version": "0.4.3",
+    "license": "MIT",
+    "files": [
+      "licenses/python/httpx-sse/httpx_sse-0.4.3.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/idna/idna-3.20.dist-info/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.26.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/jsonschema/jsonschema-4.26.0.dist-info/licenses/COPYING"
+    ]
+  },
+  {
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "license": "MIT",
+    "files": [
+      "licenses/python/jsonschema-specifications/jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING"
+    ]
+  },
+  {
+    "name": "mcp",
+    "version": "1.30.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/mcp/mcp-1.30.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "pycparser",
+    "version": "3.11",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/pycparser/pycparser-3.11.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "pydantic",
+    "version": "2.14.1",
+    "license": "MIT",
+    "files": [
+      "licenses/python/pydantic/pydantic-2.14.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "pydantic-settings",
+    "version": "2.16.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/pydantic-settings/pydantic_settings-2.16.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.50.1",
+    "license": "MIT",
+    "files": [
+      "licenses/python/pydantic_core/pydantic_core-2.50.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "PyJWT",
+    "version": "2.15.1",
+    "license": "MIT",
+    "files": [
+      "licenses/python/PyJWT/pyjwt-2.15.1.dist-info/licenses/AUTHORS.rst",
+      "licenses/python/PyJWT/pyjwt-2.15.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.4",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/python-dotenv/python_dotenv-1.2.4.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "python-multipart",
+    "version": "0.0.32",
+    "license": "Apache-2.0",
+    "files": [
+      "licenses/python/python-multipart/python_multipart-0.0.32.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "pywin32",
+    "version": "312",
+    "license": "PSF",
+    "files": [
+      "licenses/python/pywin32/adodbapi/license.txt",
+      "licenses/python/pywin32/pythonwin/License.txt",
+      "licenses/python/pywin32/pythonwin/Scintilla-License.txt",
+      "licenses/python/pywin32/pythonwin/pywin/idle/LICENSE.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/adodbapi/license.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/com/License.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/com/win32comext/mapi/src/MAPIStubLibrary/LICENSE",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/isapi/README.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/pythonwin/License.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/pythonwin/Scintilla/License.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/pythonwin/pywin/idle/LICENSE.txt",
+      "licenses/python/pywin32/pywin32-312.dist-info/licenses/win32/License.txt",
+      "licenses/python/pywin32/win32/License.txt",
+      "licenses/python/pywin32/win32com/License.txt",
+      "licenses/python/pywin32/win32comext/License.txt",
+      "licenses/python/pywin32/win32comext/mapi/MAPIStubLibrary-License.txt",
+      "licenses/python/pywin32/win32comext/mapi/NOTICE.md"
+    ]
+  },
+  {
+    "name": "referencing",
+    "version": "0.37.0",
+    "license": "MIT",
+    "files": [
+      "licenses/python/referencing/referencing-0.37.0.dist-info/licenses/COPYING"
+    ]
+  },
+  {
+    "name": "rpds-py",
+    "version": "2026.9.1",
+    "license": "MIT",
+    "files": [
+      "licenses/python/rpds-py/rpds_py-2026.9.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "sse-starlette",
+    "version": "3.5.0",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/sse-starlette/sse_starlette-3.5.0.dist-info/licenses/AUTHORS",
+      "licenses/python/sse-starlette/sse_starlette-3.5.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "starlette",
+    "version": "1.8.0",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/starlette/starlette-1.8.0.dist-info/licenses/LICENSE.md"
+    ]
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license": "MIT",
+    "files": [
+      "licenses/python/typing-inspection/typing_inspection-0.4.4.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "files": [
+      "licenses/python/typing_extensions/typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.54.0",
+    "license": "BSD-3-Clause",
+    "files": [
+      "licenses/python/uvicorn/uvicorn-0.54.0.dist-info/licenses/LICENSE.md"
+    ]
+  }
+]

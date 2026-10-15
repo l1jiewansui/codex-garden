@@ -1,0 +1,988 @@
+{
+  "origin": [
+    24,
+    44
+  ],
+  "frames": [
+    {
+      "hero": 0,
+      "action": "idle",
+      "rect": [
+        0,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "idle",
+      "rect": [
+        48,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "water",
+      "rect": [
+        96,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "water",
+      "rect": [
+        144,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "water",
+      "rect": [
+        192,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "feed",
+      "rect": [
+        240,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "feed",
+      "rect": [
+        288,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 0,
+      "action": "feed",
+      "rect": [
+        336,
+        0,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "idle",
+      "rect": [
+        0,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "idle",
+      "rect": [
+        48,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "water",
+      "rect": [
+        96,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "water",
+      "rect": [
+        144,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "water",
+      "rect": [
+        192,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "feed",
+      "rect": [
+        240,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "feed",
+      "rect": [
+        288,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 1,
+      "action": "feed",
+      "rect": [
+        336,
+        48,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "idle",
+      "rect": [
+        0,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "idle",
+      "rect": [
+        48,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "water",
+      "rect": [
+        96,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "water",
+      "rect": [
+        144,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "water",
+      "rect": [
+        192,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "feed",
+      "rect": [
+        240,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "feed",
+      "rect": [
+        288,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 2,
+      "action": "feed",
+      "rect": [
+        336,
+        96,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "idle",
+      "rect": [
+        0,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "idle",
+      "rect": [
+        48,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "water",
+      "rect": [
+        96,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "water",
+      "rect": [
+        144,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "water",
+      "rect": [
+        192,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "feed",
+      "rect": [
+        240,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "feed",
+      "rect": [
+        288,
+        144,
+        48,
+        48
+      ]
+    },
+    {
+      "hero": 3,
+      "action": "feed",
+      "rect": [
+        336,
+        144,
+        48,
+        48
+      ]
+    }
+  ],
+  "palette": [
+    "25252f",
+    "36343a",
+    "4b3936",
+    "60443a",
+    "7b5740",
+    "9b6c47",
+    "bb8e5c",
+    "b47b5f",
+    "d99d73",
+    "f0c295",
+    "f5d7ad",
+    "706c55",
+    "9b9874",
+    "c3ba8b",
+    "e3d5a9",
+    "f6eac3",
+    "263f35",
+    "35553b",
+    "4c6f3e",
+    "6a8b48",
+    "91ac58",
+    "bdd078",
+    "26374b",
+    "37536a",
+    "4d7387",
+    "77a0ae",
+    "b0c9c7",
+    "243f44",
+    "34636b",
+    "548e91",
+    "8cb6ad",
+    "6b393d",
+    "93464a",
+    "bc6261",
+    "e38d7c",
+    "895a30",
+    "b57b35",
+    "dca04a",
+    "f5c86c",
+    "ffe3a3",
+    "686575",
+    "90879d",
+    "b8a7bb",
+    "ae7683",
+    "d49b9c",
+    "f0c1ae",
+    "f7f1dc"
+  ],
+  "records": [
+    {
+      "name": "hero-0-frame-0",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 27,
+      "opaquePixels": 586
+    },
+    {
+      "name": "hero-0-frame-1",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 566
+    },
+    {
+      "name": "hero-0-frame-2",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 24,
+      "opaquePixels": 632
+    },
+    {
+      "name": "hero-0-frame-3",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 25,
+      "opaquePixels": 630
+    },
+    {
+      "name": "hero-0-frame-4",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 27,
+      "opaquePixels": 623
+    },
+    {
+      "name": "hero-0-frame-5",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 595
+    },
+    {
+      "name": "hero-0-frame-6",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 25,
+      "opaquePixels": 618
+    },
+    {
+      "name": "hero-0-frame-7",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 27,
+      "opaquePixels": 573
+    },
+    {
+      "name": "hero-1-frame-0",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 549
+    },
+    {
+      "name": "hero-1-frame-1",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 22,
+      "opaquePixels": 542
+    },
+    {
+      "name": "hero-1-frame-2",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 613
+    },
+    {
+      "name": "hero-1-frame-3",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 22,
+      "opaquePixels": 591
+    },
+    {
+      "name": "hero-1-frame-4",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 578
+    },
+    {
+      "name": "hero-1-frame-5",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 24,
+      "opaquePixels": 558
+    },
+    {
+      "name": "hero-1-frame-6",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 24,
+      "opaquePixels": 559
+    },
+    {
+      "name": "hero-1-frame-7",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 538
+    },
+    {
+      "name": "hero-2-frame-0",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 601
+    },
+    {
+      "name": "hero-2-frame-1",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 585
+    },
+    {
+      "name": "hero-2-frame-2",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 18,
+      "opaquePixels": 658
+    },
+    {
+      "name": "hero-2-frame-3",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 666
+    },
+    {
+      "name": "hero-2-frame-4",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 17,
+      "opaquePixels": 623
+    },
+    {
+      "name": "hero-2-frame-5",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 20,
+      "opaquePixels": 613
+    },
+    {
+      "name": "hero-2-frame-6",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 633
+    },
+    {
+      "name": "hero-2-frame-7",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 596
+    },
+    {
+      "name": "hero-3-frame-0",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 20,
+      "opaquePixels": 599
+    },
+    {
+      "name": "hero-3-frame-1",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 22,
+      "opaquePixels": 599
+    },
+    {
+      "name": "hero-3-frame-2",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 635
+    },
+    {
+      "name": "hero-3-frame-3",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 645
+    },
+    {
+      "name": "hero-3-frame-4",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 624
+    },
+    {
+      "name": "hero-3-frame-5",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 600
+    },
+    {
+      "name": "hero-3-frame-6",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 620
+    },
+    {
+      "name": "hero-3-frame-7",
+      "size": [
+        44,
+        44
+      ],
+      "sourceRect": [
+        0,
+        0,
+        240,
+        240
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 22,
+      "opaquePixels": 587
+    }
+  ],
+  "sha256": "81b2802749094bed5d5597a179694ebff01dfbf53e87a28c0a9ce4f9aa3fe9a3"
+}

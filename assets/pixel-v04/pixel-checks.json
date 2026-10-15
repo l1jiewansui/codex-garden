@@ -1,0 +1,1492 @@
+{
+  "processed": 78,
+  "paletteSize": 47,
+  "binaryAlpha": true,
+  "frameSizeFixed": true,
+  "sourcesPreserved": true,
+  "records": [
+    {
+      "name": "gardener-0/idle_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        54,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 34,
+      "opaquePixels": 616
+    },
+    {
+      "name": "gardener-0/portrait",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        31,
+        54,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 26,
+      "opaquePixels": 280
+    },
+    {
+      "name": "gardener-0/idle_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        54,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 33,
+      "opaquePixels": 626
+    },
+    {
+      "name": "gardener-0/idle_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        54,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 29,
+      "opaquePixels": 624
+    },
+    {
+      "name": "gardener-0/idle_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        54,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 34,
+      "opaquePixels": 622
+    },
+    {
+      "name": "gardener-0/cast_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        258,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 34,
+      "opaquePixels": 636
+    },
+    {
+      "name": "gardener-0/cast_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        258,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 34,
+      "opaquePixels": 652
+    },
+    {
+      "name": "gardener-0/cast_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        258,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 32,
+      "opaquePixels": 643
+    },
+    {
+      "name": "gardener-0/cast_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        258,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 34,
+      "opaquePixels": 650
+    },
+    {
+      "name": "gardener-1/idle_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        471,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 30,
+      "opaquePixels": 660
+    },
+    {
+      "name": "gardener-1/portrait",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        31,
+        471,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 297
+    },
+    {
+      "name": "gardener-1/idle_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        471,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 28,
+      "opaquePixels": 661
+    },
+    {
+      "name": "gardener-1/idle_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        471,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 29,
+      "opaquePixels": 648
+    },
+    {
+      "name": "gardener-1/idle_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        471,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 28,
+      "opaquePixels": 641
+    },
+    {
+      "name": "gardener-1/cast_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        681,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 31,
+      "opaquePixels": 680
+    },
+    {
+      "name": "gardener-1/cast_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        681,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 30,
+      "opaquePixels": 690
+    },
+    {
+      "name": "gardener-1/cast_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        681,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 30,
+      "opaquePixels": 691
+    },
+    {
+      "name": "gardener-1/cast_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        681,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 30,
+      "opaquePixels": 678
+    },
+    {
+      "name": "gardener-2/idle_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        897,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 32,
+      "opaquePixels": 660
+    },
+    {
+      "name": "gardener-2/portrait",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        31,
+        897,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 297
+    },
+    {
+      "name": "gardener-2/idle_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        897,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 29,
+      "opaquePixels": 674
+    },
+    {
+      "name": "gardener-2/idle_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        897,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 30,
+      "opaquePixels": 672
+    },
+    {
+      "name": "gardener-2/idle_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        897,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 28,
+      "opaquePixels": 669
+    },
+    {
+      "name": "gardener-2/cast_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        1105,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 33,
+      "opaquePixels": 673
+    },
+    {
+      "name": "gardener-2/cast_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        1105,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 33,
+      "opaquePixels": 693
+    },
+    {
+      "name": "gardener-2/cast_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        1105,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 30,
+      "opaquePixels": 695
+    },
+    {
+      "name": "gardener-2/cast_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        1105,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 34,
+      "opaquePixels": 685
+    },
+    {
+      "name": "gardener-3/idle_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        1313,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 730
+    },
+    {
+      "name": "gardener-3/portrait",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        31,
+        1313,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 21,
+      "opaquePixels": 331
+    },
+    {
+      "name": "gardener-3/idle_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        1313,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 27,
+      "opaquePixels": 731
+    },
+    {
+      "name": "gardener-3/idle_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        1313,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 24,
+      "opaquePixels": 728
+    },
+    {
+      "name": "gardener-3/idle_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        1313,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 24,
+      "opaquePixels": 722
+    },
+    {
+      "name": "gardener-3/cast_000.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        31,
+        1526,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 26,
+      "opaquePixels": 740
+    },
+    {
+      "name": "gardener-3/cast_001.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        239,
+        1526,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 27,
+      "opaquePixels": 757
+    },
+    {
+      "name": "gardener-3/cast_002.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        446,
+        1526,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 26,
+      "opaquePixels": 754
+    },
+    {
+      "name": "gardener-3/cast_003.png",
+      "size": [
+        48,
+        48
+      ],
+      "sourceRect": [
+        652,
+        1526,
+        208,
+        208
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 26,
+      "opaquePixels": 745
+    },
+    {
+      "name": "crop-0-stage-0",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 320
+    },
+    {
+      "name": "crop-0-stage-1",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        314,
+        0,
+        313,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 15,
+      "opaquePixels": 335
+    },
+    {
+      "name": "crop-0-stage-2",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        627,
+        0,
+        313,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 18,
+      "opaquePixels": 411
+    },
+    {
+      "name": "crop-0-stage-3",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        940,
+        0,
+        314,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 566
+    },
+    {
+      "name": "crop-1-stage-0",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        0,
+        316,
+        314,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 20,
+      "opaquePixels": 324
+    },
+    {
+      "name": "crop-1-stage-1",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        314,
+        316,
+        313,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 18,
+      "opaquePixels": 362
+    },
+    {
+      "name": "crop-1-stage-2",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        627,
+        316,
+        313,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 23,
+      "opaquePixels": 451
+    },
+    {
+      "name": "crop-1-stage-3",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        940,
+        316,
+        314,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 25,
+      "opaquePixels": 619
+    },
+    {
+      "name": "crop-2-stage-0",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        0,
+        638,
+        314,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 20,
+      "opaquePixels": 317
+    },
+    {
+      "name": "crop-2-stage-1",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        314,
+        638,
+        313,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 18,
+      "opaquePixels": 355
+    },
+    {
+      "name": "crop-2-stage-2",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        627,
+        638,
+        313,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 22,
+      "opaquePixels": 494
+    },
+    {
+      "name": "crop-2-stage-3",
+      "size": [
+        32,
+        32
+      ],
+      "sourceRect": [
+        940,
+        638,
+        314,
+        314
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 19,
+      "opaquePixels": 605
+    },
+    {
+      "name": "icon-sparkle-8",
+      "size": [
+        8,
+        8
+      ],
+      "sourceRect": [
+        0,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 10
+    },
+    {
+      "name": "icon-care-8",
+      "size": [
+        8,
+        8
+      ],
+      "sourceRect": [
+        314,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 5,
+      "opaquePixels": 12
+    },
+    {
+      "name": "icon-seeds-8",
+      "size": [
+        8,
+        8
+      ],
+      "sourceRect": [
+        627,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 7,
+      "opaquePixels": 26
+    },
+    {
+      "name": "icon-app-8",
+      "size": [
+        8,
+        8
+      ],
+      "sourceRect": [
+        940,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 16
+    },
+    {
+      "name": "icon-sparkle-9",
+      "size": [
+        9,
+        9
+      ],
+      "sourceRect": [
+        0,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 10
+    },
+    {
+      "name": "icon-care-9",
+      "size": [
+        9,
+        9
+      ],
+      "sourceRect": [
+        314,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 7,
+      "opaquePixels": 17
+    },
+    {
+      "name": "icon-seeds-9",
+      "size": [
+        9,
+        9
+      ],
+      "sourceRect": [
+        627,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 7,
+      "opaquePixels": 26
+    },
+    {
+      "name": "icon-app-9",
+      "size": [
+        9,
+        9
+      ],
+      "sourceRect": [
+        940,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 22
+    },
+    {
+      "name": "icon-sparkle-10",
+      "size": [
+        10,
+        10
+      ],
+      "sourceRect": [
+        0,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 15
+    },
+    {
+      "name": "icon-care-10",
+      "size": [
+        10,
+        10
+      ],
+      "sourceRect": [
+        314,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 21
+    },
+    {
+      "name": "icon-seeds-10",
+      "size": [
+        10,
+        10
+      ],
+      "sourceRect": [
+        627,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 8,
+      "opaquePixels": 35
+    },
+    {
+      "name": "icon-app-10",
+      "size": [
+        10,
+        10
+      ],
+      "sourceRect": [
+        940,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 7,
+      "opaquePixels": 28
+    },
+    {
+      "name": "icon-sparkle-12",
+      "size": [
+        12,
+        12
+      ],
+      "sourceRect": [
+        0,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 5,
+      "opaquePixels": 20
+    },
+    {
+      "name": "icon-care-12",
+      "size": [
+        12,
+        12
+      ],
+      "sourceRect": [
+        314,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 6,
+      "opaquePixels": 32
+    },
+    {
+      "name": "icon-seeds-12",
+      "size": [
+        12,
+        12
+      ],
+      "sourceRect": [
+        627,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 11,
+      "opaquePixels": 54
+    },
+    {
+      "name": "icon-app-12",
+      "size": [
+        12,
+        12
+      ],
+      "sourceRect": [
+        940,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 7,
+      "opaquePixels": 40
+    },
+    {
+      "name": "icon-sparkle-16",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        0,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 4,
+      "opaquePixels": 35
+    },
+    {
+      "name": "icon-care-16",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        314,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 8,
+      "opaquePixels": 59
+    },
+    {
+      "name": "icon-seeds-16",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        627,
+        969,
+        313,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 11,
+      "opaquePixels": 91
+    },
+    {
+      "name": "icon-app-16",
+      "size": [
+        16,
+        16
+      ],
+      "sourceRect": [
+        940,
+        969,
+        314,
+        285
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 8,
+      "opaquePixels": 71
+    },
+    {
+      "name": "digit-0",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 12
+    },
+    {
+      "name": "digit-1",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 8
+    },
+    {
+      "name": "digit-2",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 11
+    },
+    {
+      "name": "digit-3",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 11
+    },
+    {
+      "name": "digit-4",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 9
+    },
+    {
+      "name": "digit-5",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 11
+    },
+    {
+      "name": "digit-6",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 12
+    },
+    {
+      "name": "digit-7",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 7
+    },
+    {
+      "name": "digit-8",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 13
+    },
+    {
+      "name": "digit-9",
+      "size": [
+        3,
+        5
+      ],
+      "sourceRect": [
+        0,
+        0,
+        3,
+        5
+      ],
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 1,
+      "opaquePixels": 12
+    }
+  ],
+  "reducerSha256": "9a37073f8274b390738ad3baa72c8c402305f981ed248115e8e0f408b24c5525"
+}

@@ -1,0 +1,726 @@
+[
+  {
+    "id": "1da127fb80524a02",
+    "name": "云瑶 · 素衣医修",
+    "source": "E:\\gamekr\\XiuXianPixelStudio\\output\\1da127fb80524a02\\64x64",
+    "sha256": "e7a49ec133df2cdbadaab223b7bd5990e2864200340876188ae4be82f641e8e9",
+    "visualApproved": false,
+    "origin": [
+      35.36,
+      57.503184713375795
+    ],
+    "frames": [
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 0,
+        "file": "idle_000.png",
+        "durationMs": 180,
+        "sha256": "7eb4c8aafdd23a76b78486e05f3b120fd100afbc538e18c34785b4bbf2c95eb7",
+        "bounds": [
+          13,
+          24,
+          46,
+          57
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 1,
+        "file": "idle_001.png",
+        "durationMs": 180,
+        "sha256": "25d26fc08b96fcc617aa4245031055423b5d65007e4008e590b15a94dad3ea5d",
+        "bounds": [
+          13,
+          24,
+          48,
+          57
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 2,
+        "file": "idle_002.png",
+        "durationMs": 180,
+        "sha256": "dc47b6e91eb65ae44e796e963f0d17d56e346edb0e09f3a93517dd95e11cae08",
+        "bounds": [
+          13,
+          24,
+          44,
+          57
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 3,
+        "file": "idle_003.png",
+        "durationMs": 180,
+        "sha256": "c6738f727341147844116bde57dc0cc8f6dd0025bd4999066a8aeff0d40f8bb1",
+        "bounds": [
+          13,
+          24,
+          49,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 0,
+        "file": "walk_000.png",
+        "durationMs": 150,
+        "sha256": "f9697da56615b0853fc779765f64152a6824e5d91f9480c25ed5df7b0978fd51",
+        "bounds": [
+          13,
+          23,
+          46,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 1,
+        "file": "walk_001.png",
+        "durationMs": 150,
+        "sha256": "8013d2289447f362abbfcd9e137647716c7f58d13cd670e380c4665e2e80b73d",
+        "bounds": [
+          14,
+          23,
+          45,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 2,
+        "file": "walk_002.png",
+        "durationMs": 150,
+        "sha256": "a20dc5527b5e583e633b65ef2d124b46fee50ee5419f2a3d2af44efc52d57a8f",
+        "bounds": [
+          13,
+          23,
+          46,
+          58
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 3,
+        "file": "walk_003.png",
+        "durationMs": 150,
+        "sha256": "14fc9215ccc714c8e690a4df7cdd71e29bf94f19c3cdae4187572890a5f9fa1a",
+        "bounds": [
+          13,
+          23,
+          45,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 0,
+        "file": "cast_000.png",
+        "durationMs": 180,
+        "sha256": "a60ed22b14abb0793ad9183eec5612941c566355512bcc1d7e798ae5a091ea9b",
+        "bounds": [
+          13,
+          24,
+          47,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 1,
+        "file": "cast_001.png",
+        "durationMs": 180,
+        "sha256": "80595879c9b8a09158ad6ff831b8fee7ac635ad8ecbf1fe45b7a2d1663645ace",
+        "bounds": [
+          13,
+          24,
+          50,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 2,
+        "file": "cast_002.png",
+        "durationMs": 180,
+        "sha256": "161b529f1dc987936dac6878b204bae4408b511663d669b0213e267f34c099ff",
+        "bounds": [
+          12,
+          24,
+          48,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 3,
+        "file": "cast_003.png",
+        "durationMs": 180,
+        "sha256": "a6c235b936c8f3829fcb7eefab1ce26c2c962b5d01200994285d2e7ef7a5a61b",
+        "bounds": [
+          13,
+          24,
+          46,
+          57
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3d7a67d681da4205",
+    "name": "赤鸢 · 赤符术师",
+    "source": "E:\\gamekr\\XiuXianPixelStudio\\output\\3d7a67d681da4205\\64x64",
+    "sha256": "470952f9ebd2d80d53fa826af3ec1b13a7d0eb28f862596dd964cd4f79451e7d",
+    "visualApproved": false,
+    "origin": [
+      35.36,
+      57.503184713375795
+    ],
+    "frames": [
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 0,
+        "file": "idle_000.png",
+        "durationMs": 180,
+        "sha256": "88a91806186d6faefca403a92886fe1d3bb9c5ecffaf6b74dc39e17f6b6cbc7b",
+        "bounds": [
+          13,
+          24,
+          47,
+          57
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 1,
+        "file": "idle_001.png",
+        "durationMs": 180,
+        "sha256": "48aca83f5457cb305d941f23aee49d7491f385d6d1c4d04be6e9f7fe016d6f97",
+        "bounds": [
+          13,
+          24,
+          46,
+          57
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 2,
+        "file": "idle_002.png",
+        "durationMs": 180,
+        "sha256": "70b09fb3fbab8aaa835df50032eaddd6213393b79831bf23e2a15e6197513389",
+        "bounds": [
+          13,
+          24,
+          48,
+          57
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 3,
+        "file": "idle_003.png",
+        "durationMs": 180,
+        "sha256": "ae2e8ca5bbbfcc004758daed4e1e4e7190a5896a8ecd7142511d98a084c90427",
+        "bounds": [
+          13,
+          24,
+          47,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 0,
+        "file": "walk_000.png",
+        "durationMs": 145,
+        "sha256": "9c7e4901ab73226a734b21c3dddfad911a2a8b4a7e552fc29adf23927eeaf736",
+        "bounds": [
+          15,
+          23,
+          48,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 1,
+        "file": "walk_001.png",
+        "durationMs": 145,
+        "sha256": "47c8b3d36d4d585feb9056bb16b775f773bca130bed10b1131c8aa22c25a0504",
+        "bounds": [
+          15,
+          23,
+          47,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 2,
+        "file": "walk_002.png",
+        "durationMs": 145,
+        "sha256": "3ad690ea396bc9b6fb3e1b6e745a478e778df050884e43458257e9bd5d716b52",
+        "bounds": [
+          14,
+          23,
+          47,
+          57
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 3,
+        "file": "walk_003.png",
+        "durationMs": 145,
+        "sha256": "b365654f9eeab85ad23490dbbf6109c3db7aa3eb767034de7da7c0cfc38aafdc",
+        "bounds": [
+          14,
+          23,
+          47,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 0,
+        "file": "cast_000.png",
+        "durationMs": 170,
+        "sha256": "24a70d1d18a49ca67f627629e9a22834903291624654c98ec7be10cf1a691789",
+        "bounds": [
+          13,
+          23,
+          45,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 1,
+        "file": "cast_001.png",
+        "durationMs": 170,
+        "sha256": "3ee6c09cbf7f40109ad9d5a13fc6970d84e704be33780f2d1e84d1a741b766f1",
+        "bounds": [
+          13,
+          23,
+          50,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 2,
+        "file": "cast_002.png",
+        "durationMs": 170,
+        "sha256": "e33b9054d1cd1af92f707ee45ec5b69678abe45a8cce204e88ca85c904f8eb8b",
+        "bounds": [
+          13,
+          23,
+          51,
+          57
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 3,
+        "file": "cast_003.png",
+        "durationMs": 170,
+        "sha256": "4f355348e730489d2ed8851eadae656037f01b5726f599963be0a20ab7ecd97a",
+        "bounds": [
+          14,
+          23,
+          47,
+          57
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0931106f4f8c48ca",
+    "name": "墨衡 · 玄铁刀修",
+    "source": "E:\\gamekr\\XiuXianPixelStudio\\output\\0931106f4f8c48ca\\64x64",
+    "sha256": "fbfb705faab15cb244a97a3219d9d682e0a699f0ceccf4bb2bfec64242e3033f",
+    "visualApproved": false,
+    "origin": [
+      35.36,
+      57.503184713375795
+    ],
+    "frames": [
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 0,
+        "file": "idle_000.png",
+        "durationMs": 180,
+        "sha256": "dbed06ac0f70c418c03273548d0868bd3f5ab9763dc9d55a3a25c534d21a7a1e",
+        "bounds": [
+          11,
+          23,
+          45,
+          58
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 1,
+        "file": "idle_001.png",
+        "durationMs": 180,
+        "sha256": "5a3f269de9176f7503ac9eaf94324891816cee7b4d8b39134dbfb1b0b7dcea38",
+        "bounds": [
+          11,
+          23,
+          45,
+          58
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 2,
+        "file": "idle_002.png",
+        "durationMs": 180,
+        "sha256": "051ba643febe02451568d624ec2956f8959697448a524fec17cc88fff0397fca",
+        "bounds": [
+          10,
+          23,
+          49,
+          58
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 3,
+        "file": "idle_003.png",
+        "durationMs": 180,
+        "sha256": "c7d2bff718a5013ff1dd0c31813fe70addd3720e065e0e0c1ca4ce0ad7db005f",
+        "bounds": [
+          10,
+          23,
+          46,
+          58
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 0,
+        "file": "walk_000.png",
+        "durationMs": 145,
+        "sha256": "3e666367b40cc01b33c9a03ec841c5ad83ecd09a8f601910d7bdc97a25b5dce6",
+        "bounds": [
+          9,
+          22,
+          46,
+          58
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 1,
+        "file": "walk_001.png",
+        "durationMs": 145,
+        "sha256": "ef5a79b03ea5ac55f805ce3dabcd28087b04f8af8689dad88595c703a1228d53",
+        "bounds": [
+          11,
+          22,
+          45,
+          58
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 2,
+        "file": "walk_002.png",
+        "durationMs": 145,
+        "sha256": "6100880cf4ac05464e1d437e82f27ac38201fe9c3549e42b3a4e1bac25b92f30",
+        "bounds": [
+          9,
+          22,
+          46,
+          58
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 3,
+        "file": "walk_003.png",
+        "durationMs": 145,
+        "sha256": "7aead9869c2d6f99afcc76bb12db5bf1f38f80eba9912996f68b57321fec7a89",
+        "bounds": [
+          11,
+          22,
+          44,
+          58
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 0,
+        "file": "cast_000.png",
+        "durationMs": 180,
+        "sha256": "f4cb4b88faf5894c719de0adf626dbf6aa38e08703d0b6a6e956b53f24411afd",
+        "bounds": [
+          10,
+          24,
+          46,
+          58
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 1,
+        "file": "cast_001.png",
+        "durationMs": 180,
+        "sha256": "5b7472f4872784e149cc44e0673397061e914f61ee4296fd33ab26f7df1d441f",
+        "bounds": [
+          9,
+          24,
+          49,
+          58
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 2,
+        "file": "cast_002.png",
+        "durationMs": 180,
+        "sha256": "3dff9cfe7dffaa8f635e85e6580a2f94f4af2923015ee45c4c13ac5187ab1720",
+        "bounds": [
+          8,
+          24,
+          48,
+          58
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 3,
+        "file": "cast_003.png",
+        "durationMs": 180,
+        "sha256": "d2c3555e09ab0a5755b3d2cfd3c5461e7f72017f12235e1947f4687d9a63a5c9",
+        "bounds": [
+          10,
+          24,
+          45,
+          58
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6aaf8960999b4a34",
+    "name": "青岚剑修",
+    "source": "E:\\gamekr\\XiuXianPixelStudio\\output\\6aaf8960999b4a34\\64x64",
+    "sha256": "0a3dae3840c5bd4392566d91c492f49f4a975e925595d5b2a5a606ff89093a87",
+    "visualApproved": false,
+    "origin": [
+      35.36,
+      59.16
+    ],
+    "frames": [
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 0,
+        "file": "idle_000.png",
+        "durationMs": 180,
+        "sha256": "0d639a6dad7b2aed0ad07d436d9ed37c7f4fa41191cf517c7c510854ff0faa50",
+        "bounds": [
+          13,
+          20,
+          47,
+          59
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 1,
+        "file": "idle_001.png",
+        "durationMs": 180,
+        "sha256": "81921850e62d9224c9d8a2fc74e04297f07c59715e6b5d6780e6cbe97b402951",
+        "bounds": [
+          11,
+          20,
+          47,
+          59
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 2,
+        "file": "idle_002.png",
+        "durationMs": 180,
+        "sha256": "d60dbb506160c95efe1b046de81295d4f8089a2efc2937851e7b5954e623cf93",
+        "bounds": [
+          10,
+          20,
+          44,
+          59
+        ]
+      },
+      {
+        "action": "idle",
+        "row": 0,
+        "index": 3,
+        "file": "idle_003.png",
+        "durationMs": 180,
+        "sha256": "32a3bb5bac08e7ebce6c30cf551d0ce008941d4d8cb6a13d9ea67f5f08bc3c90",
+        "bounds": [
+          10,
+          20,
+          47,
+          59
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 0,
+        "file": "walk_000.png",
+        "durationMs": 140,
+        "sha256": "0d2750996e686615f2148aa541471a78a36d0553920f0a0db836b24c4b582929",
+        "bounds": [
+          12,
+          19,
+          47,
+          59
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 1,
+        "file": "walk_001.png",
+        "durationMs": 140,
+        "sha256": "f8f07dbb59f791e286a3b1b3d71a347a457087e6bf9a551218db8e625439301b",
+        "bounds": [
+          12,
+          19,
+          46,
+          59
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 2,
+        "file": "walk_002.png",
+        "durationMs": 140,
+        "sha256": "c324c02c149b10ee20c819251e0de5b7b9b89beac2c23cc57b238bd4b09bd93c",
+        "bounds": [
+          10,
+          19,
+          45,
+          59
+        ]
+      },
+      {
+        "action": "walk",
+        "row": 1,
+        "index": 3,
+        "file": "walk_003.png",
+        "durationMs": 140,
+        "sha256": "368b99eb01ef2e603b0a5fde6b6ac9aca92c08f84982946605e95690f8f6f69d",
+        "bounds": [
+          11,
+          19,
+          44,
+          59
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 0,
+        "file": "cast_000.png",
+        "durationMs": 170,
+        "sha256": "4356ff3ac266eafb2b75f5e973a643334e9d559db01f36b59a9e3e1090fda631",
+        "bounds": [
+          12,
+          21,
+          50,
+          59
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 1,
+        "file": "cast_001.png",
+        "durationMs": 170,
+        "sha256": "7258ebaf3b65af1513493879ad00466829df7650ae798af5f62b23acbf0a0f03",
+        "bounds": [
+          12,
+          21,
+          55,
+          59
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 2,
+        "file": "cast_002.png",
+        "durationMs": 170,
+        "sha256": "d496ed158e7571c38db800f4a5280c58cfeddc8a9b769963065994d56c8ce9a2",
+        "bounds": [
+          8,
+          21,
+          60,
+          59
+        ]
+      },
+      {
+        "action": "cast",
+        "row": 3,
+        "index": 3,
+        "file": "cast_003.png",
+        "durationMs": 170,
+        "sha256": "4ee451972f033bf85d7ae61ca12d2e93271951622569b55364797f898b3c98de",
+        "bounds": [
+          10,
+          21,
+          45,
+          59
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+const {compare,upgradeExecutable}=require('../update-policy.cjs');
+assert(compare('0.10.0-beta.1','0.9.1')>0);assert(compare('1.0.0','1.0.0-beta.1')>0);assert.equal(compare('bad','1.0.0'),0);
+const root=fs.mkdtempSync(path.join(os.tmpdir(),'garden-upgrade-'));
+try{fs.mkdirSync(path.join(root,'resources/app'),{recursive:true});const exe=path.join(root,'CodexGarden.exe');fs.writeFileSync(exe,'test');fs.writeFileSync(path.join(root,'resources/app/package.json'),JSON.stringify({name:'codex-garden',version:'1.1.0'}));assert.equal(upgradeExecutable({executable:exe,version:'1.1.0'},'1.0.0'),exe);assert.equal(upgradeExecutable({executable:exe,version:'0.9.0'},'1.0.0'),null);assert.equal(upgradeExecutable({executable:exe,version:'1.2.0'},'1.0.0'),null);assert.equal(upgradeExecutable({executable:'relative.exe',version:'2.0.0'},'1.0.0'),null);}finally{assert(path.resolve(root).startsWith(path.resolve(os.tmpdir())+path.sep));assert(path.basename(root).startsWith('garden-upgrade-'));fs.rmSync(root,{recursive:true,force:true});}
+console.log('Upgrade version, package identity and newer-only handoff checks passed.');
