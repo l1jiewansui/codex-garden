@@ -2,11 +2,12 @@
 import hashlib,json,shutil,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+from release_paths import APP,PLUGIN,PLUGIN_ZIP
 
 def build():
-    app=ROOT/'dist/desktop-pet-rc010';server=ROOT/'runtime/garden-mcp.exe'
+    app=APP;server=ROOT/'runtime/garden-mcp.exe'
     if not app.is_dir() or not server.is_file():raise RuntimeError('Build application and MCP executable first')
-    target=ROOT/'dist/qingyun-garden-plugin-0.10.0-rc.1'
+    target=PLUGIN
     if target.exists():raise RuntimeError('Plugin output already exists; preserve it before rebuilding')
     shutil.copytree(ROOT/'plugin',target)
     publisher=json.loads((ROOT/'release/PUBLISHER.json').read_text(encoding='utf-8'))
@@ -21,7 +22,7 @@ def build():
     for source,destination in [('PRIVACY.md','PRIVACY.md'),('release/PLUGIN-INSTALL.md','README.md'),('release/THIRD-PARTY-NOTICES.md','THIRD-PARTY-NOTICES.md')]:shutil.copy2(ROOT/source,target/destination)
     records={p.relative_to(target).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in target.rglob('*') if p.is_file()}
     (target/'SHA256.json').write_text(json.dumps(records,indent=2),encoding='utf-8')
-    archive=target.parent/(target.name+'.zip')
+    archive=PLUGIN_ZIP
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for p in target.rglob('*'):
             if p.is_file():z.write(p,p.relative_to(target).as_posix())

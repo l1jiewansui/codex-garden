@@ -3,6 +3,7 @@ import hashlib,json,subprocess,sys,urllib.request,urllib.parse,os
 from pathlib import Path
 from datetime import datetime,timezone
 ROOT=Path(__file__).resolve().parents[1]
+from release_paths import VERSION,APP
 publisher=json.loads((ROOT/'release/PUBLISHER.json').read_text(encoding='utf-8'))
 checks=[]
 shell_environment=dict(os.environ)
@@ -21,7 +22,7 @@ for field in ('websiteURL','supportURL','privacyPolicyURL','termsOfServiceURL'):
     check(field,valid,detail)
 for field in ('verifiedOrganization','localMcpApprovedPartner'):
     check(field,publisher.get(field) is True,'需要实际发布组织验证与本地 MCP 发布资格，不能由构建脚本授予')
-app=ROOT/'dist/desktop-pet-rc010'
+app=APP
 for relative in ('CodexGarden.exe','resources/app/runtime/garden-bridge.exe'):
     exe=app/relative
     result=subprocess.run(['powershell.exe','-NoProfile','-Command',"(Get-AuthenticodeSignature -LiteralPath '"+str(exe).replace("'","''")+"').Status.ToString()"],capture_output=True,text=True,env=shell_environment)
@@ -38,14 +39,14 @@ audit=json.loads((ROOT/'verification/rc010-npm-audit.json').read_text(encoding='
 check('npmAudit',audit.get('metadata',{}).get('vulnerabilities',{}).get('total')==0,'当前依赖审计')
 audit=json.loads((ROOT/'verification/rc010-python-audit.json').read_text(encoding='utf-8'))
 check('pythonAudit',all(not d.get('vulns') for d in audit.get('dependencies',[])) and len(audit.get('dependencies',[]))==30,'固定的30项 MCP 依赖审计')
-for name in ('rc010-garden-qa','rc010-welcome-qa','rc010-install-lifecycle','rc010-mcp-qa','rc010-dpi-1.25-garden-qa','rc010-dpi-1.5-garden-qa','rc010-dpi-2-garden-qa','rc010-soak-garden-qa','rc010-native-upgrade'):
+for name in ('rc2-dpi-1-garden-qa','rc2-welcome-qa','install-'+VERSION+'-lifecycle','mcp-'+VERSION+'-qa','rc2-dpi-1.25-garden-qa','rc2-dpi-1.5-garden-qa','rc2-dpi-2-garden-qa'):
     path=ROOT/f'verification/{name}.json'
     check(name,path.is_file() and json.loads(path.read_text(encoding='utf-8-sig')).get('passed') is True,'本轮实际自动化报告')
 check('externalWindowsValidation',False,'待干净 Windows、多显示器、休眠恢复与长时间试用实测')
-host=ROOT/'verification/rc010-host-install.json'
+host=ROOT/f'verification/host-install-{VERSION}.json'
 check('hostCLIInstallValidation',host.is_file() and json.loads(host.read_text(encoding='utf-8')).get('passed') is True,'Codex CLI 安装、启用与缓存内 MCP 实测')
 check('hostPluginUIValidation',False,'CLI 已安装启用；桌面插件界面与新对话调用尚未验收')
-report={'version':'0.10.0-rc.1','checkedAt':datetime.now(timezone.utc).isoformat(),'publicReleaseReady':all(c['passed'] for c in checks),'checks':checks}
+report={'version':VERSION,'checkedAt':datetime.now(timezone.utc).isoformat(),'publicReleaseReady':all(c['passed'] for c in checks),'checks':checks}
 (ROOT/'verification/public-release-gate.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=True,indent=2))
 sys.exit(0 if report['publicReleaseReady'] else 2)

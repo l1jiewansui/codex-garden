@@ -1,5 +1,6 @@
 const {app,BrowserWindow,ipcMain,shell,Tray,Menu,nativeImage,screen,dialog}=require('electron');
 const {spawn}=require('node:child_process');const path=require('node:path'),fs=require('node:fs'),readline=require('node:readline');
+const {gardenName:normalizeGardenName}=require('./web/model.js');
 const {WIDTH,HEIGHT,EXPANDED,bounded,hitTest}=require('./desktop-model.cjs');
 app.setName('codex-garden-pet-v06');app.setPath('userData',path.join(app.getPath('appData'),'codex-garden-pet-v06'));
 const VERSION=require('./package.json').version,{upgradeExecutable}=require('./update-policy.cjs');
@@ -23,6 +24,7 @@ function createWindow(){
  pos={x:Number.isFinite(pos.x)?Math.round(pos.x):area.x,y:Number.isFinite(pos.y)?Math.round(pos.y):area.y};
  const bounds=bounded({...pos,width:WIDTH,height:HEIGHT},screen.getDisplayNearestPoint(pos).workArea);
  win=new BrowserWindow({...bounds,frame:false,thickFrame:false,transparent:true,backgroundColor:'#00000000',hasShadow:false,resizable:false,focusable:false,skipTaskbar:true,alwaysOnTop:true,show:false,minimizable:false,maximizable:false,fullscreenable:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
+ win.on('blur',()=>{if(win.isFocusable()){win.setFocusable(false);win.webContents.send('garden:command','cancel-name');}});win.on('hide',()=>{win.setFocusable(false);win.webContents.send('garden:command','cancel-name');});
  win.setBounds(bounds);win.setIgnoreMouseEvents(true,{forward:true});win.setMenu(null);win.loadFile(path.join(__dirname,'web/pet.html'));win.once('ready-to-show',()=>win.showInactive());
  win.on('close',e=>{if(!quitting){e.preventDefault();win.hide();}});win.on('moved',()=>{clearTimeout(saveTimer);saveTimer=setTimeout(()=>{moveBounded(win.getBounds());savePosition();},250);});
  win.webContents.setWindowOpenHandler(()=>({action:'deny'}));win.webContents.on('will-navigate',e=>e.preventDefault());pointerTimer=setInterval(updatePointer,50);
@@ -46,7 +48,7 @@ if(ownsLock)app.whenReady().then(()=>{
  readline.createInterface({input:bridge.stdout}).on('line',line=>{try{const m=JSON.parse(line),p=pending.get(m.id);if(p){clearTimeout(p.timer);pending.delete(m.id);m.error?p.reject(Error(m.error)):p.resolve(m.result);}}catch{}});
  bridge.on('error',rejectPending);bridge.stdin.on('error',rejectPending);bridge.on('exit',()=>rejectPending(Error('本地读取程序已退出，请重启菜园。')));
  ipcMain.handle('garden:snapshot',()=>{if(!accepted)return {threads:[],inventory:{},error:null,connection:'welcome'};readRequests++;return rpc('snapshot');});ipcMain.handle('garden:harvest',(_,threadId,plantKind)=>{if(!accepted)throw Error('请先完成欢迎说明');return rpc('harvest',{threadId,plantKind});});
- ipcMain.handle('garden:window',(_,action,value)=>{if(action==='drag'&&value&&Number.isFinite(value.dx)&&Number.isFinite(value.dy)&&Math.abs(value.dx)<1000&&Math.abs(value.dy)<1000){const b=win.getBounds();moveBounded({...b,x:b.x+Math.round(value.dx),y:b.y+Math.round(value.dy)});return;}if(action==='start'){fs.mkdirSync(app.getPath('userData'),{recursive:true});fs.writeFileSync(path.join(app.getPath('userData'),'welcome.json'),JSON.stringify({accepted:true,version:VERSION}));accepted=true;return true;}if(action==='panel')return resizePanel(Boolean(value));if(action==='hide')win.hide();if(action==='pass'){manualPass=true;updatePointer();trayMenu();}if(action==='quit')app.quit();});
+ ipcMain.handle('garden:window',(_,action,value)=>{if(action==='editing'){if(value===true){manualPass=false;setIgnore(false);win.setFocusable(true);win.focus();}else{win.hide();win.setFocusable(false);win.showInactive();updatePointer();}return;}if(action==='name'){const name=normalizeGardenName(value);win.setTitle(name);tray?.setToolTip(name+' · 双击恢复交互');return;}if(action==='drag'&&value&&Number.isFinite(value.dx)&&Number.isFinite(value.dy)&&Math.abs(value.dx)<1000&&Math.abs(value.dy)<1000){const b=win.getBounds();moveBounded({...b,x:b.x+Math.round(value.dx),y:b.y+Math.round(value.dy)});return;}if(action==='start'){fs.mkdirSync(app.getPath('userData'),{recursive:true});fs.writeFileSync(path.join(app.getPath('userData'),'welcome.json'),JSON.stringify({accepted:true,version:VERSION}));accepted=true;return true;}if(action==='panel')return resizePanel(Boolean(value));if(action==='hide')win.hide();if(action==='pass'){manualPass=true;updatePointer();trayMenu();}if(action==='quit')app.quit();});
  ipcMain.handle('garden:open',async(_,id)=>{if(!/^[a-zA-Z0-9-]{1,80}$/.test(id))throw Error('无效聊天ID');await shell.openExternal('codex://threads/'+id);});
  ipcMain.on('garden:geometry',(_,data)=>{
   if(!data||!Array.isArray(data.regions)||data.regions.length>20)return;

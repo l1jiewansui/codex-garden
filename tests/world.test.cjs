@@ -6,3 +6,13 @@ assert.equal(new Set(Object.values(slots({a:1,b:1,c:-3},[{id:'a'},{id:'b'},{id:'
 assert.equal(matches({status:'stale'},'care'),true);assert.equal(matches({status:'growing'},'care'),false);
 assert.equal(cropStage('ripe'),3);assert.equal(cropStage('failed'),1);assert.equal(cropStage('harvested'),0);
 console.log('World model: slot stability, slot reuse, invalid slots, filtering and crop states passed.');
+const {sequentialSlots,orderedThreads,gardenName}=require('../web/model.js');
+const recent=[{id:'old',updated_at:1},{id:'new',updated_at:3},{id:'middle',updated_at:2}];
+assert.deepEqual(orderedThreads(recent).map(t=>t.id),['new','middle','old']);
+assert.deepEqual(sequentialSlots(recent),{new:0,middle:1,old:2});
+assert.deepEqual(sequentialSlots(recent.filter(t=>t.id!=='middle')),{new:0,old:1});
+assert.deepEqual(orderedThreads([{id:'z',updated_at:1},{id:'a',updated_at:1}]).map(t=>t.id),['a','z']);
+assert.deepEqual(orderedThreads([{id:'demo-1'},{id:'demo-0'}]).map(t=>t.id),['demo-1','demo-0']);
+assert.equal(gardenName('  我的花园\n\u202e  '),'我的花园');assert.equal(gardenName(' '),'我的菜园');
+assert.equal(Array.from(gardenName('🌱'.repeat(30))).length,24);assert.equal(gardenName(null),'我的菜园');
+console.log('Sequential conversation/plant order and safe persistent garden names passed.');

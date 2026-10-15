@@ -12,12 +12,12 @@
 
 ## 选择下载内容
 
-打开 [0.10.0-rc.1 下载页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.1)，展开 **Assets**：
+打开 [0.10.0-rc.2 下载页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.2)，展开 **Assets**：
 
 | 文件 | 适合谁 |
 |---|---|
-| `codex-garden-0.10.0-rc.1-windows.zip` | 大多数用户：直接使用桌面菜园 |
-| `codex-garden-0.10.0-rc.1-plugin.zip` | 希望从 Codex 对话里调用菜园工具的用户，包含同一桌面程序 |
+| `codex-garden-0.10.0-rc.2-windows.zip` | 大多数用户：直接使用桌面菜园 |
+| `codex-garden-0.10.0-rc.2-plugin.zip` | 希望从 Codex 对话里调用菜园工具的用户，包含同一桌面程序 |
 | 同名 `.zip.sha256` | 对照下载文件的完整性 |
 | GitHub 自动生成的 Source code | 源代码，不是可以双击使用的安装包 |
 
@@ -40,7 +40,7 @@
 2. 双击 **Install.cmd**，等待安装完成。
 3. 在 Windows 开始菜单中搜索 **Qingyun Garden**，打开菜园。
 
-安装仅作用于当前用户，无需管理员权限。当前候选版保留了旧的开始菜单名称，窗口里也可能显示“青云菜园”；它们均为 codex-garden。
+安装仅作用于当前用户，无需管理员权限。当前候选版的开始菜单名称为 Qingyun Garden；菜园内显示的名称可以自行修改。
 
 ## 可选：接入 Codex 本地插件
 
@@ -93,7 +93,7 @@ codex plugin add qingyun-garden@risu1-local-plugins
 同时下载 ZIP 与同名 `.sha256` 文件。在 ZIP 所在文件夹打开 PowerShell：
 
 ```powershell
-Get-FileHash .\codex-garden-0.10.0-rc.1-windows.zip -Algorithm SHA256
+Get-FileHash .\codex-garden-0.10.0-rc.2-windows.zip -Algorithm SHA256
 ```
 
 将输出的哈希与 `.sha256` 文件中的哈希对照，应完全一致；大小写不影响比较。SHA256 用于核对文件完整性，不等同于发布者数字签名。

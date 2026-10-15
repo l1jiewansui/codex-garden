@@ -5,6 +5,7 @@ from contextlib import closing
 from mcp import ClientSession,StdioServerParameters
 from mcp.client.stdio import stdio_client
 ROOT=Path(__file__).resolve().parents[1]
+from release_paths import VERSION
 
 async def test():
     with tempfile.TemporaryDirectory(prefix='garden-mcp-test-') as temp:
@@ -34,5 +35,5 @@ async def test():
             rejected=await session.call_tool('garden_status',{'path':'C:/private'})
             assert rejected.isError,'Unknown input was not rejected'
         report={'passed':True,'protocol':'stdio MCP SDK initialize/list_tools/call_tool','tools':3,'consentGating':True,'aggregateOnly':True,'unknownArgumentsRejected':True}
-        (ROOT/'verification/rc010-mcp-qa.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print(json.dumps(report))
+        (ROOT/f'verification/mcp-{VERSION}-qa.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print(json.dumps(report))
 if __name__=='__main__':asyncio.run(test())

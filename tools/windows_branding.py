@@ -18,6 +18,7 @@ def brand(executable):
             if not set(check.ico.getimage(size).convert('RGBA').getdata())<=palette:raise RuntimeError('ICO palette changed')
     version=json.loads((ROOT/'package.json').read_text(encoding='utf-8'))['version']
     fields={'CompanyName':'risu1','FileDescription':'Qingyun Desktop Garden','FileVersion':version,'InternalName':'CodexGarden','OriginalFilename':'CodexGarden.exe','ProductName':'Qingyun Garden','ProductVersion':version,'LegalCopyright':'Copyright (c) 2026 risu1. Third-party notices included.'}
-    info=v.VSVersionInfo(ffi=v.FixedFileInfo(filevers=(0,10,0,1),prodvers=(0,10,0,1),flags=2),kids=[v.StringFileInfo([v.StringTable('040904b0',[v.StringStruct(k,value) for k,value in fields.items()])]),v.VarFileInfo([v.VarStruct('Translation',[1033,1200])])])
+    numbers=tuple(map(int,version.split('-')[0].split('.')))+(int(version.rsplit('.',1)[-1]) if '-' in version and version.rsplit('.',1)[-1].isdigit() else 0,)
+    info=v.VSVersionInfo(ffi=v.FixedFileInfo(filevers=numbers,prodvers=numbers,flags=2),kids=[v.StringFileInfo([v.StringTable('040904b0',[v.StringStruct(k,value) for k,value in fields.items()])]),v.VarFileInfo([v.VarStruct('Translation',[1033,1200])])])
     config.CONF['workpath']=str(ROOT/'.work')
     icon.CopyIcons(str(executable),str(target));v.write_version_info_to_executable(str(executable),info)

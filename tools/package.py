@@ -2,7 +2,7 @@
 import json, shutil, hashlib, tempfile, time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'dist/desktop-pet-rc010'
+from release_paths import APP as OUT
 def build():
     if not (ROOT/'runtime/garden-bridge.exe').exists():raise RuntimeError('先构建 runtime/garden-bridge.exe，见 README')
     (ROOT/'.work').mkdir(exist_ok=True)

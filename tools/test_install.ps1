@@ -19,6 +19,6 @@ try {
     & (Join-Path $root 'Uninstall.ps1')
     if ((Test-Path -LiteralPath $root) -or (Test-Path -LiteralPath $shortcut) -or (Test-Path -LiteralPath $key)) { throw 'Uninstall left application registration behind.' }
     if (-not (Test-Path -LiteralPath $preserved)) { throw 'User settings were removed.' }
-    @{passed=$true;install=$true;shortcut=$true;registration=$true;uninstall=$true;settingsPreserved=$true;scratch=$scratch} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $PSScriptRoot '..\verification\rc010-install-lifecycle.json') -Encoding UTF8
+    @{passed=$true;install=$true;shortcut=$true;registration=$true;uninstall=$true;settingsPreserved=$true;scratch=$scratch} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $PSScriptRoot ('..\verification\install-'+$entry.DisplayVersion+'-lifecycle.json')) -Encoding UTF8
     Write-Output 'Isolated install, Start menu, registry and uninstall lifecycle passed.'
 } finally { $env:LOCALAPPDATA=$oldLocal;$env:APPDATA=$oldRoaming }
