@@ -65,9 +65,15 @@
 
 如果这片小菜园让工作轻松了一点，欢迎在仓库右上角点一个 **Star**。
 
-[![codex-garden 的 Star 数量变化，每天记录一次真实数量。](docs/metrics/star-history.svg)](https://github.com/l1jiewansui/codex-garden/stargazers)
+<a href="https://github.com/l1jiewansui/codex-garden/stargazers">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/metrics/star-history-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/metrics/star-history.svg">
+    <img alt="手绘风 Star History，每天记录真实的 Star 数量。" src="docs/metrics/star-history.svg" width="900">
+  </picture>
+</a>
 
-图表每天更新，数据从首次记录开始积累，不补造过去的曲线。仓库目前为私有，图表仍可正常显示；下载和 Star 需要相应的仓库访问权限。
+图表采用 Star History 常见的 xkcd 手绘风，并适配深色与浅色主题。每天更新，数据从首次记录开始积累，不补造过去的曲线。仓库目前为私有，图表仍可正常显示；下载和 Star 需要相应的仓库访问权限。
 
 ---
 

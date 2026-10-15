@@ -15,30 +15,54 @@ def record_snapshot(history,repo,count,day):
     datetime.strptime(day,'%Y-%m-%d');rows[day]=count
     return {'schemaVersion':1,'repository':repo,'timezone':'Asia/Shanghai','snapshots':[{'date':d,'stars':rows[d]} for d in sorted(rows)]}
 
-def render(history):
+def render(history,theme='light'):
+    import io
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    from matplotlib import font_manager,dates as mdates,ticker
+    import numpy as np
     rows=history['snapshots']
     if not rows:raise ValueError('No real snapshots available')
-    width,height,left,right,top,bottom=900,300,58,860,90,238
+    font=ROOT/'docs/metrics/fonts/ArchitectsDaughter-Regular.ttf'
+    font_manager.fontManager.addfont(str(font))
+    family=font_manager.FontProperties(fname=font).get_name()
+    dark=theme=='dark';background='#0d1117' if dark else '#ffffff';ink='#e6edf3' if dark else '#24292f'
+    blue='#79c0ff' if dark else '#1677d2'
     dates=[datetime.strptime(r['date'],'%Y-%m-%d') for r in rows]
-    span=max(1,(dates[-1]-dates[0]).days);maximum=max(1,max(r['stars'] for r in rows))
-    points=[(left+(right-left)*((d-dates[0]).days/span) if len(rows)>1 else (left+right)/2,bottom-(bottom-top)*r['stars']/maximum) for d,r in zip(dates,rows)]
-    elements=[]
-    for tick in sorted({0,maximum//2,maximum}):
-        fraction=tick/maximum
-        y=bottom-(bottom-top)*fraction
-        elements.append(f'<path d="M{left} {y}H{right}" stroke="#42544c"/><text x="42" y="{y+4}" text-anchor="end" fill="#b0c9c7" font-size="12">{tick}</text>')
-    if len(points)>1:
-        elements.append('<polyline fill="none" stroke="#bdd078" stroke-width="3" points="'+' '.join(f'{x:.2f},{y:.2f}' for x,y in points)+'"/>')
-    else:elements.append('<text x="459" y="148" text-anchor="middle" fill="#c3ba8b" font-size="15">First snapshot · more days will form the curve</text>')
-    for x,y in points:elements.append(f'<rect x="{x-3:.2f}" y="{y-3:.2f}" width="6" height="6" fill="#f5c86c"/>')
-    labels=((left,rows[0]['date'],'start'),(right,rows[-1]['date'],'end')) if len(rows)>1 else (((left+right)/2,rows[0]['date'],'middle'),)
-    for x,label,anchor in labels:
-        elements.append(f'<text x="{x}" y="264" text-anchor="{anchor}" fill="#c3ba8b" font-size="12">{label}</text>')
-    title=escape(history['repository']);latest=rows[-1]['stars']
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">
-<title id="title">Star history · {title}</title><desc id="description">{len(rows)} real daily snapshots. Latest: {latest} stars on {rows[-1]['date']}. No earlier history was fabricated.</desc>
-<rect width="900" height="300" fill="#25252f"/><rect x="1" y="1" width="898" height="298" fill="none" stroke="#706c55" stroke-width="2"/>
-<g font-family="Arial, sans-serif"><text x="30" y="36" fill="#f6eac3" font-size="22" font-weight="bold">Star history</text><text x="30" y="60" fill="#c3ba8b" font-size="13">{title} · daily snapshots (UTC+8)</text><text x="864" y="39" text-anchor="end" fill="#bdd078" font-size="26" font-weight="bold">{latest} Stars</text>{''.join(elements)}<text x="450" y="286" text-anchor="middle" fill="#90879d" font-size="11">Actual observations since {rows[0]['date']} · decreases are preserved</text></g></svg>'''
+    values=[r['stars'] for r in rows]
+    # Preserve caller RNG state and keep repeated renders byte-stable.
+    random_state=np.random.get_state();np.random.seed(42)
+    try:
+        with plt.xkcd(scale=1.1,length=110,randomness=1.5),matplotlib.rc_context({'font.family':family,'svg.fonttype':'path','svg.hashsalt':'codex-garden-star-history','path.effects':[]}):
+            fig,ax=plt.subplots(figsize=(9,4.4),dpi=100)
+            fig.patch.set_facecolor(background);ax.set_facecolor(background)
+            fig.subplots_adjust(left=.11,right=.95,top=.76,bottom=.23)
+            ax.spines[['top','right']].set_visible(False)
+            for spine in ax.spines.values():spine.set_color(ink);spine.set_linewidth(1.5)
+            ax.tick_params(colors=ink,labelsize=11)
+            ax.set_title('Star History',fontsize=25,color=ink,pad=40)
+            ax.set_ylabel('GitHub Stars',fontsize=14,color=ink,labelpad=12)
+            ax.set_xlabel('Date',fontsize=14,color=ink,labelpad=12)
+            ax.plot(dates,values,color=blue,linewidth=2.6,marker='o',markersize=5,label=history['repository'])
+            ax.legend(loc='upper left',bbox_to_anchor=(0,1.16),frameon=False,fontsize=12,labelcolor=blue)
+            ax.set_ylim(-.04*max(1,max(values)),max(1,max(values))*1.2)
+            ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True,nbins=5,min_n_ticks=2))
+            if len(rows)==1:
+                ax.set_xlim(dates[0]-timedelta(hours=12),dates[0]+timedelta(hours=12));ax.set_xticks(dates)
+                ax.text(.5,.52,'First snapshot - more days will form the curve',ha='center',transform=ax.transAxes,fontsize=12,color=ink)
+            else:
+                ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=2,maxticks=5));ax.margins(x=.04)
+            ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d, %Y'))
+            ax.annotate(f"{values[-1]} stars",xy=(dates[-1],values[-1]),xytext=(9,14),textcoords='offset points',fontsize=12,color=blue)
+            fig.text(.5,.035,f"Daily snapshots since {rows[0]['date']} (UTC+8)",ha='center',fontsize=10,color=ink)
+            stream=io.StringIO();fig.savefig(stream,format='svg',facecolor=background,metadata={'Date':None});plt.close(fig)
+            svg=stream.getvalue()
+    finally:np.random.set_state(random_state)
+    title=escape(history['repository']);description=escape(f"{len(rows)} real daily snapshots. Latest: {values[-1]} stars on {rows[-1]['date']}. No earlier history was fabricated.")
+    svg=svg.replace('<svg ','<svg role="img" aria-labelledby="star-title star-desc" ',1)
+    pos=svg.index('>',svg.index('<svg '))+1
+    return svg[:pos]+f'<title id="star-title">Star history - {title}</title><desc id="star-desc">{description}</desc>'+svg[pos:]
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--snapshot',type=Path);parser.add_argument('--repo',default=os.environ.get('GITHUB_REPOSITORY','l1jiewansui/codex-garden'));args=parser.parse_args()
@@ -56,5 +80,6 @@ def main():
     history=record_snapshot(previous,args.repo,source['stargazers_count'],day)
     data.write_text(json.dumps(history,indent=2)+'\n',encoding='utf-8')
     (folder/'star-history.svg').write_text(render(history),encoding='utf-8')
+    (folder/'star-history-dark.svg').write_text(render(history,'dark'),encoding='utf-8')
     print(f"Updated {args.repo}: {source['stargazers_count']} stars; {len(history['snapshots'])} daily observations")
 if __name__=='__main__':main()

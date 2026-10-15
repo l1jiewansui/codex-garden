@@ -17,3 +17,10 @@ class StarHistoryTests(unittest.TestCase):
   with self.assertRaises(ValueError):record_snapshot({'repository':'other/repo'},'owner/repo',1,'2026-10-15')
   for count in (-1,True,'5'):
    with self.assertRaises(ValueError):record_snapshot({},'owner/repo',count,'2026-10-15')
+ def test_themes_embed_outlines_and_are_deterministic(self):
+  data=record_snapshot({},'owner/repo',0,'2026-10-15')
+  light=render(data);dark=render(data,'dark')
+  self.assertEqual(light,render(data))
+  self.assertIn('#ffffff',light);self.assertIn('#0d1117',dark)
+  self.assertNotIn('@font-face',light);self.assertNotIn('<script',light)
+  self.assertIn('role="img"',light);ElementTree.fromstring(dark)
