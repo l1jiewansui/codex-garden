@@ -1,8 +1,8 @@
 # codex-garden
 
-把 Codex 对话种在桌面上，看它生长、成熟，再把这一茬收入收藏。
+让每一段 Codex 对话，在桌面上长成一株植物。随着对话推进，看它生长、成熟，将收获留在收藏箱里。
 
-一片透明的像素菜园，不抢键盘输入。点击让园丁走近，双击回到对话，忙里也能浇浇水、施施肥。
+透明的像素菜园静静待在桌面，不抢键盘输入。单击让园丁走近，双击回到对话；工作间隙，也可以浇水、施肥，照料自己的小菜地。
 
 [下载 Windows 候选版](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.1) · [安装部署手册](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [问题反馈](https://github.com/l1jiewansui/codex-garden/issues)
 
