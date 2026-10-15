@@ -1,31 +1,74 @@
 # codex-garden
 
-Windows 透明桌面伴侣，将本机 Codex 对话状态可视化为像素菜园。发布者 risu1，当前为 0.10.0-rc.1，已制作本地测试插件，尚未上架公共目录。
+把 Codex 对话种在桌面上，看它生长、成熟，再把这一茬收入收藏。
 
-使用说明见 README-PET.md，隐私说明见 PRIVACY.md。
+一片透明的像素菜园，不抢键盘输入。点击让园丁走近，双击回到对话，忙里也能浇浇水、施施肥。
 
-## 本地开发
+[下载 Windows 候选版](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.1) · [安装部署手册](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [问题反馈](https://github.com/l1jiewansui/codex-garden/issues)
 
-需要 Windows x64、Node.js 22.12+ 和 Python 3.13。首次运行：
+![桌面菜园：像素太阳、园丁、连续菜地、公告栏和收藏箱。演示数据，不含真实对话。](docs/screenshots/garden.png)
 
-```powershell
-python -m pip install -r requirements-dev.txt
-npm ci
-npm start
-```
+> 截图使用演示数据。当前支持 **Windows x64 + Codex 桌面版**；下载包自带运行环境，无需安装 Python 或 Node.js。当前为 **0.10.0-rc.1 候选版**，尚未代码签名或通过公共插件目录审核。
 
-源代码模式可直接使用 Python 桥接程序，不需要先下载打包后的运行时。运行 `npm test` 检查核心逻辑和资源；桌面交互验证需在有 Codex 本地对话的 Windows 桌面会话中运行 `npm run qa`。
+## 三步开始种菜
 
-本仓库不提交本机对话、收藏、凭据、验证截图、依赖缓存或安装包。安装包单独作为 GitHub Release 附件分发。已处理的像素资源随源代码保存，可以直接运行；重新生成美术时，部分工具依赖同级的 XiuXianPixelStudio 工程及其固定 FrameRonin 管线，详见 ART-DIRECTION-V04.md。
+1. **下载并解压**：在 [Release 页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.1) 下载 `codex-garden-0.10.0-rc.1-windows.zip`，右键选择“全部解压”，不要直接在压缩包里运行。
+2. **打开菜园**：进入解压后的文件夹，双击 `CodexGarden.exe`。想加入开始菜单，也可以双击 `Install.cmd`，无需管理员权限。
+3. **点击“开始种菜”**：阅读首次说明后确认。打开本机 Codex，稍等几秒，最近的对话就会出现在菜地上。
 
-开发需要 Node.js 22.12+、Python 3.10+，安装依赖后运行 npm start。npm test 检查状态解析、阅读状态、像素资源、收藏恢复和升级策略。npm run qa 验证桌面交互；electron . --qa --qa-welcome 单独验证首次使用前不读取对话。
+<img src="docs/screenshots/welcome.png" alt="首次使用：阅读数据用途说明后点击开始种菜" width="360">
 
-桥接构建命令：python -m PyInstaller --onefile --paths backend --name garden-bridge --distpath runtime --workpath .work/bridge-beta010 --specpath .work backend/bridge.py
+当前候选版部分界面仍显示“青云菜园”，开始菜单名称为 **Qingyun Garden**，它们都是本项目。完整的安装、升级、卸载和可选插件接入步骤见[安装部署手册](docs/INSTALL.md)。
 
-随后运行 python tools/package.py 输出发布目录，包含运行时、安装与卸载脚本、使用说明和 SHA256 清单。
+## 怎么照料这片菜园
 
-安装器支持 -TestMode -NoLaunch：仅复制到系统临时目录，不创建快捷方式、注册表项或启动程序。测试模式不等同于真实 Windows 安装、升级及卸载验证。
+| 想做什么 | 操作 |
+|---|---|
+| 移动整个菜园 | 按住像素太阳拖动 |
+| 让园丁走过去 | 单击土地或植物 |
+| 收获并回到对话 | 双击成熟植物；未成熟植物直接打开对话 |
+| 看这株植物对应什么 | 鼠标悬停，信息卡显示对话名称与状态 |
+| 浇水、施肥 | 悬停后点击两个独立按钮，观看人物动作 |
+| 换一种植物或园丁 | 右键植物，打开选择面板 |
+| 查看左右菜地 | 使用鼠标滚轮，或公告旁的左右按钮 |
+| 查看对话、查看收藏 | 点击公告栏、旁边的收藏箱 |
+| 隐藏、找回或退出 | 右键系统托盘里的菜园图标 |
 
-Codex 本地数据库使用只读连接，并检查字段；阅读状态冲突时不猜测。收藏格式支持从旧版记录迁移到版本1，写入由进程锁与原子替换保护。拒绝不识别的未来版本，避免错误降级覆盖。
+### 看懂植物的状态
 
-原始生图不进入发布包。资源来源和许可见各 assets/pixel-* 目录及 release/THIRD-PARTY-NOTICES.md。第三方清单、上架文案、官网和政策页面稿已准备；完整操作见 release/RELEASE-RUNBOOK.md。公开发布仍需真实政策/支持地址、发布身份与本地 MCP 资格、可信签名及外部 Windows 验证。verification/public-release-gate.json 是逐项检查结果，不用空值冒充已完成。
+- **正在生长**：对话正在进行。
+- **已经成熟**：观察到一轮对话完成，可以双击收获。成熟不代表任务已经验收通过。
+- **带有微光**：检测到未读回复；无法确定阅读状态时，信息卡会如实显示待确认。
+- **已收获**：这一轮已经收过，不会重复增加收藏。
+
+收菜不会修改 Codex 的阅读状态。浇水与施肥只有动画效果，不会改变工作进度。
+
+![悬停植物后，空白区域显示对话信息，旁边是独立的浇水与施肥按钮。](docs/screenshots/care.png)
+
+### 把收获留在收藏箱里
+
+可选植物包括胡萝卜、卷心菜、番茄、南瓜、玉米、草莓，以及月光花、水晶菇等特殊品种。部分成熟植物还会出现隐藏款。
+
+点击公告栏旁的箱子，即可查看已收获的品种和数量。收藏会保留在本机，关闭菜园后再打开仍然存在。
+
+<img src="docs/screenshots/collection.png" alt="收藏箱显示已收获的卷心菜及数量，下面仍然是透明桌面菜园。" width="360">
+
+更多操作与常见问题见[使用指南](docs/USAGE.md)。
+
+## 数据与备份
+
+首次确认后，菜园才会读取本机 Codex 数据，显示最近 **24 个未归档对话**。对话和收藏在本机处理，不上传，没有广告、遥测或云同步。
+
+右键托盘图标，可以选择“导出收藏备份”。升级前建议备份；卸载默认保留收藏与设置。备份含对话标识，请勿公开分享。详见[隐私说明](PRIVACY.md)。
+
+## Star 曲线
+
+如果这片小菜园让工作轻松了一点，欢迎在仓库右上角点一个 **Star**。
+
+[![codex-garden 的 Star 数量变化，每天记录一次真实数量。](docs/metrics/star-history.svg)](https://github.com/l1jiewansui/codex-garden/stargazers)
+
+图表每天更新，数据从首次记录开始积累，不补造过去的曲线。仓库目前为私有，图表仍可正常显示；下载和 Star 需要相应的仓库访问权限。
+
+---
+
+[安装部署](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [隐私说明](PRIVACY.md) · [反馈问题](https://github.com/l1jiewansui/codex-garden/issues) · [开发者文档](docs/DEVELOPMENT.md)

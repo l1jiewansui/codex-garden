@@ -1,0 +1,12 @@
+{
+  "name": "risu1-local-plugins",
+  "interface": {"displayName": "codex-garden 本地插件"},
+  "plugins": [
+    {
+      "name": "qingyun-garden",
+      "source": {"source": "local", "path": "./plugins/codex-garden"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}
