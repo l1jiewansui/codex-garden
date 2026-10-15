@@ -1,6 +1,6 @@
 {
   "name": "codex-garden",
-  "version": "0.10.0-rc.2",
+  "version": "0.10.0-rc.3",
   "private": true,
   "description": "本地 Codex 对话像素菜园",
   "main": "main.cjs",

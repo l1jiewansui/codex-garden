@@ -94,6 +94,24 @@ def attention_for(thread_id,groups):
     votes=[thread_id in group for group in groups]
     return 'unread' if all(votes) else 'read' if not any(votes) else 'unknown'
 
+def sidebar_order():
+    """Read local pinned order only; never persist into Codex state."""
+    try:
+        raw=json.loads((HOME/'.codex-global-state.json').read_text(encoding='utf-8'))
+        atoms=raw.get('electron-persisted-atom-state',{})
+        unified=atoms.get('unified-sidebar-pinned-order-v1')
+        if isinstance(unified,list):
+            return list(dict.fromkeys(v.removeprefix('codex:thread:local:') for v in unified if isinstance(v,str) and v.startswith('codex:thread:local:')))
+        for values in (atoms.get('app-server-pinned-thread-order-v1'),raw.get('pinned-thread-ids')):
+            if isinstance(values,list):return list(dict.fromkeys(v for v in values if isinstance(v,str)))
+    except (OSError,ValueError,AttributeError):pass
+    return []
+
+def order_rows(rows,pinned):
+    ranks={value:index for index,value in enumerate(pinned)}
+    # Query provides stable creation order for non-pinned conversations.
+    return sorted(rows,key=lambda row:ranks.get(row['id'],len(ranks)))[:24]
+
 def inventory_of(state):
     result={}
     for record in state.values():
@@ -119,7 +137,9 @@ def snapshot():
         if 'archived' in columns:clauses.append('archived=0')
         if 'source' in columns:clauses.append("COALESCE(source,'') NOT LIKE '%subagent%'")
         where=' WHERE '+' AND '.join(clauses) if clauses else ''
-        rows=conn.execute('SELECT id,title,cwd,updated_at,rollout_path FROM threads'+where+' ORDER BY updated_at DESC LIMIT 24').fetchall()
+        stable='created_at DESC,id ASC' if 'created_at' in columns else 'id DESC'
+        rows=conn.execute('SELECT id,title,cwd,updated_at,rollout_path FROM threads'+where+' ORDER BY '+stable).fetchall()
+        rows=order_rows(rows,sidebar_order())
     threads=[]
     for row in rows:
         d=dict(row); path=d.pop('rollout_path'); d.update(inspect_log(path))

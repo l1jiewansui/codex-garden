@@ -1,6 +1,6 @@
 # 发布操作手册
 
-发布者为 risu1。当前版本 0.10.0-rc.2，目标平台 Windows x64。候选包可本地验证，公共发布必须通过全部门槛。
+发布者为 risu1。当前版本 0.10.0-rc.3，目标平台 Windows x64。候选包可本地验证，公共发布必须通过全部门槛。
 
 ## 可重复构建
 
@@ -21,12 +21,12 @@ python tools/release_metadata.py
 python tools/package.py
 python tools/prepare_listing_assets.py
 python tools/validate_plugin.py
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/test_install.ps1 -PackagePath "$PWD/dist/desktop-pet-0.10.0-rc.2"
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/test_install.ps1 -PackagePath "$PWD/dist/desktop-pet-0.10.0-rc.3"
 python tools/archive_release.py
 python tools/build_plugin.py
 ```
 
-验证 MCP 时将 .work/mcp-deps 加入 PYTHONPATH，运行 tools/test_mcp.py。验证桌面时运行 dist/desktop-pet-0.10.0-rc.2/CodexGarden.exe --qa；首次说明单独加 --qa-welcome。QA 写入包内 resources/app/verification，发布归档前重新打包。
+验证 MCP 时将 .work/mcp-deps 加入 PYTHONPATH，运行 tools/test_mcp.py。验证桌面时运行 dist/desktop-pet-0.10.0-rc.3/CodexGarden.exe --qa；首次说明单独加 --qa-welcome。QA 写入包内 resources/app/verification，发布归档前重新打包。
 
 完整插件内同时包含桌面程序与本地 MCP；不使用 lifecycle hooks。stdio 服务只暴露三个无参数工具。不得加入任意命令、任意路径读取、代收获或改写 Codex 的工具。
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "qingyun-garden",
-  "version": "0.10.0-rc.2",
+  "version": "0.10.0-rc.3",
   "author": {
     "name": "risu1"
   },
@@ -17,7 +17,7 @@
       "interface": {
         "displayName": "青云桌面菜园",
         "shortDescription": "把对话种在桌面，收获每一轮进展",
-        "longDescription": "将本机 Codex 对话呈现为透明像素菜园。查看生长状态，双击收获并打开对话，收藏特殊植物。首次确认后读取最近24个未归档对话；工具只返回汇总数量。成熟代表观察到一轮完成，不等于任务验收通过。浇水和施肥只有装饰效果。适用 Windows x64，依赖本机 Codex 数据格式。",
+        "longDescription": "将本机 Codex 对话呈现为透明像素菜园。查看生长状态，双击收获并打开对话，收藏特殊植物。首次确认后读取最多24个未归档对话；工具只返回汇总数量。成熟代表观察到一轮完成，不等于任务验收通过。浇水和施肥只有装饰效果。适用 Windows x64，依赖本机 Codex 数据格式。",
         "developerName": "risu1",
         "category": "Productivity",
         "capabilities": [

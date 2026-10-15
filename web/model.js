@@ -2,7 +2,7 @@
  'use strict';
  const CARE=['paused','failed','stale','unknown','waiting'];
  function gardenName(value){return typeof value==='string'?Array.from(value.replace(/[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2066-\u2069]/g,'').trim()).slice(0,24).join('')||'我的菜园':'我的菜园';}
- function orderedThreads(threads){return threads.map((thread,index)=>({thread,index})).sort((a,b)=>{const x=Number(a.thread.updated_at),y=Number(b.thread.updated_at),xf=Number.isFinite(x),yf=Number.isFinite(y);if(xf!==yf)return xf?-1:1;if(xf&&x!==y)return y-x;if(xf)return String(a.thread.id).localeCompare(String(b.thread.id),'en');return a.index-b.index;}).map(v=>v.thread);}
+ function orderedThreads(threads){return threads.slice();}
  function sequentialSlots(threads){return Object.fromEntries(orderedThreads(threads).map((t,index)=>[t.id,index]));}
  function slots(previous,threads){
    const result={},used=new Set();

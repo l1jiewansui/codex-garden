@@ -7,6 +7,21 @@ b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
 def event(kind,**p):return json.dumps({'type':'event_msg','timestamp':'now','payload':{'type':kind,**p}})
 
 class AdapterTests(unittest.TestCase):
+    def test_pinned_order_precedes_stable_non_pinned_and_activity(self):
+        rows=[{'id':str(i),'updated_at':100-i} for i in range(30)]
+        result=b.order_rows(rows,['29','3','missing'])
+        self.assertEqual([r['id'] for r in result[:4]],['29','3','0','1'])
+        self.assertEqual(len(result),24)
+        rows[0]['updated_at']=999999
+        self.assertEqual(b.order_rows(rows,['29','3','missing']),result)
+
+    def test_sidebar_local_order_ignores_remote_and_duplicates(self):
+        with tempfile.TemporaryDirectory() as folder,patch.object(b,'HOME',Path(folder)):
+            path=Path(folder)/'.codex-global-state.json'
+            path.write_text(json.dumps({'electron-persisted-atom-state':{'unified-sidebar-pinned-order-v1':['codex:thread:local:b','codex:thread:remote:x','chatgpt:conversation:y','codex:thread:local:a','codex:thread:local:b']}}))
+            self.assertEqual(b.sidebar_order(),['b','a'])
+            path.write_text('{')
+            self.assertEqual(b.sidebar_order(),[])
     def test_next_turn_resets_old_completion(self):
         s=b.parse_events([event('task_started',turn_id='one'),event('task_complete',turn_id='one',last_agent_message='done'),event('task_started',turn_id='two')])
         self.assertEqual((s['status'],s['turn'],s['summary']),('growing','two',''))

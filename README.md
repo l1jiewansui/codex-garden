@@ -4,17 +4,17 @@
 
 透明的像素菜园静静待在桌面，不抢键盘输入。单击让园丁走近，双击回到对话；工作间隙，也可以浇水、施肥，照料自己的小菜地。
 
-[下载 Windows 候选版](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.2) · [安装部署手册](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [问题反馈](https://github.com/l1jiewansui/codex-garden/issues)
+[下载 Windows 候选版](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.3) · [安装部署手册](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [问题反馈](https://github.com/l1jiewansui/codex-garden/issues)
 
 ![桌面菜园：像素太阳、园丁、连续菜地、公告栏和收藏箱。演示数据，不含真实对话。](docs/screenshots/garden.png)
 
-> 截图使用演示数据。当前支持 **Windows x64 + Codex 桌面版**；下载包自带运行环境，无需安装 Python 或 Node.js。当前为 **0.10.0-rc.2 候选版**，尚未代码签名或通过公共插件目录审核。
+> 截图使用演示数据。当前支持 **Windows x64 + Codex 桌面版**；下载包自带运行环境，无需安装 Python 或 Node.js。当前为 **0.10.0-rc.3 候选版**，尚未代码签名或通过公共插件目录审核。
 
 ## 三步开始种菜
 
-1. **下载并解压**：在 [Release 页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.2) 下载 `codex-garden-0.10.0-rc.2-windows.zip`，右键选择“全部解压”，不要直接在压缩包里运行。
+1. **下载并解压**：在 [Release 页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.3) 下载 `codex-garden-0.10.0-rc.3-windows.zip`，右键选择“全部解压”，不要直接在压缩包里运行。
 2. **打开菜园**：进入解压后的文件夹，双击 `CodexGarden.exe`。想加入开始菜单，也可以双击 `Install.cmd`，无需管理员权限。
-3. **点击“开始种菜”**：阅读首次说明后确认。打开本机 Codex，稍等几秒，最近的对话就会出现在菜地上。
+3. **点击“开始种菜”**：阅读首次说明后确认。打开本机 Codex，稍等几秒，对话就会按置顶顺序出现在菜地上。
 
 <img src="docs/screenshots/welcome.png" alt="首次使用：阅读数据用途说明后点击开始种菜" width="360">
 
@@ -44,7 +44,7 @@
 
 收菜不会修改 Codex 的阅读状态。浇水与施肥只有动画效果，不会改变工作进度。
 
-植物按对话最近活跃时间从左到右排列，与公告列表从上到下的顺序一致。土地上的编号对应列表编号，列表旁会显示同一株蔬菜；有新活动时编号会随排序更新，植物选择与收藏仍跟随对应对话。
+置顶对话按 Codex 侧边栏的手动顺序从左到右排列，未置顶对话随后按创建时间从新到旧排列，与公告列表从上到下的顺序一致。土地上的编号对应列表编号，列表旁会显示同一株蔬菜；调整置顶顺序后编号会同步更新，植物选择与收藏仍跟随对应对话。
 
 ![悬停植物后，空白区域显示对话信息，旁边是独立的浇水与施肥按钮。](docs/screenshots/care.png)
 
