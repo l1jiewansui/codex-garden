@@ -107,6 +107,21 @@ def sidebar_order():
     except (OSError,ValueError,AttributeError):pass
     return []
 
+def thread_names():
+    """Session index contains the names explicitly assigned in the desktop app."""
+    names={}
+    try:
+        with (HOME/'session_index.jsonl').open(encoding='utf-8') as stream:
+            for line in stream:
+                try:record=json.loads(line)
+                except (ValueError,UnicodeError):continue
+                if not isinstance(record,dict):continue
+                identity,name=record.get('id'),record.get('thread_name')
+                if isinstance(identity,str) and isinstance(name,str) and name.strip():
+                    names[identity]=name.strip()
+    except (OSError,UnicodeError):pass
+    return names
+
 def order_rows(rows,pinned):
     ranks={value:index for index,value in enumerate(pinned)}
     # Query provides stable creation order for non-pinned conversations.
@@ -125,7 +140,7 @@ def secret_plant(thread_id,turn):
     return (h>>4)%4 if h%16==0 else None
 
 def snapshot():
-    harvested=load_state();attention=read_attention()
+    harvested=load_state();attention=read_attention();names=thread_names()
     base={'inventory':inventory_of(harvested),'storageNotice':STORAGE_NOTICE,'harvestCount':sum(v.get('count',0) for v in harvested.values())}
     db=find_database()
     if db is None:return {**base,'threads':[], 'error':'还没有找到对话，请先打开 Codex。','connection':'missing'}
@@ -143,6 +158,7 @@ def snapshot():
     threads=[]
     for row in rows:
         d=dict(row); path=d.pop('rollout_path'); d.update(inspect_log(path))
+        d['title']=names.get(d['id'],d['title']) or '未命名对话'
         # The desktop UI needs titles and state, not project paths or message excerpts.
         for field in ('cwd','summary','plan'):d.pop(field,None)
         d['crop']=int(hashlib.sha256(d['id'].encode()).hexdigest()[:8],16)%3

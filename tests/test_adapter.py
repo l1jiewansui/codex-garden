@@ -7,6 +7,12 @@ b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
 def event(kind,**p):return json.dumps({'type':'event_msg','timestamp':'now','payload':{'type':kind,**p}})
 
 class AdapterTests(unittest.TestCase):
+    def test_thread_names_use_latest_rename_ignore_invalid_lines(self):
+        with tempfile.TemporaryDirectory() as folder,patch.object(b,'HOME',Path(folder)):
+            self.assertEqual(b.thread_names(),{})
+            records=[{'id':'one','thread_name':'旧标题'},{'id':'two','thread_name':'API (2)'},{'id':'one','thread_name':'新标题'},None,{'id':'two','thread_name':' ' }]
+            (Path(folder)/'session_index.jsonl').write_text('\n'.join(json.dumps(r) for r in records)+'\n{broken',encoding='utf-8')
+            self.assertEqual(b.thread_names(),{'one':'新标题','two':'API (2)'})
     def test_pinned_order_precedes_stable_non_pinned_and_activity(self):
         rows=[{'id':str(i),'updated_at':100-i} for i in range(30)]
         result=b.order_rows(rows,['29','3','missing'])
@@ -39,6 +45,8 @@ class AdapterTests(unittest.TestCase):
                     c.execute('CREATE TABLE threads (id TEXT,title TEXT,cwd TEXT,updated_at INTEGER,rollout_path TEXT,archived INTEGER,has_user_event INTEGER,source TEXT)')
                     c.execute('INSERT INTO threads VALUES (?,?,?,?,?,0,0,?)',('t','title','project',int(time.time()),str(log),'vscode'));c.commit()
                 self.assertEqual(b.snapshot()['threads'][0]['status'],'ripe')
+                (Path(tmp)/'session_index.jsonl').write_text(json.dumps({'id':'t','thread_name':'修改后的标题'}),encoding='utf-8')
+                self.assertEqual(b.snapshot()['threads'][0]['title'],'修改后的标题')
                 original=hashlib.sha256(db.read_bytes()).hexdigest()
                 with self.assertRaises(ValueError):b.handle({'method':'harvest','threadId':'t','plantKind':99})
                 self.assertEqual(b.snapshot()['inventory'],{})
