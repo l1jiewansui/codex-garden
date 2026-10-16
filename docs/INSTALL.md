@@ -12,12 +12,12 @@
 
 ## 选择下载内容
 
-打开 [0.10.0-rc.3 下载页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.3)，展开 **Assets**：
+打开 [0.10.0-rc.5 下载页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.5)，展开 **Assets**：
 
 | 文件 | 适合谁 |
 |---|---|
-| `codex-garden-0.10.0-rc.3-windows.zip` | 大多数用户：直接使用桌面菜园 |
-| `codex-garden-0.10.0-rc.3-plugin.zip` | 希望从 Codex 对话里调用菜园工具的用户，包含同一桌面程序 |
+| `codex-garden-0.10.0-rc.5-windows.zip` | 大多数用户：直接使用桌面菜园 |
+| `codex-garden-0.10.0-rc.5-plugin.zip` | 希望从 Codex 对话里调用菜园工具的用户，包含同一桌面程序 |
 | 同名 `.zip.sha256` | 对照下载文件的完整性 |
 | GitHub 自动生成的 Source code | 源代码，不是可以双击使用的安装包 |
 
@@ -93,7 +93,7 @@ codex plugin add qingyun-garden@risu1-local-plugins
 同时下载 ZIP 与同名 `.sha256` 文件。在 ZIP 所在文件夹打开 PowerShell：
 
 ```powershell
-Get-FileHash .\codex-garden-0.10.0-rc.3-windows.zip -Algorithm SHA256
+Get-FileHash .\codex-garden-0.10.0-rc.5-windows.zip -Algorithm SHA256
 ```
 
 将输出的哈希与 `.sha256` 文件中的哈希对照，应完全一致；大小写不影响比较。SHA256 用于核对文件完整性，不等同于发布者数字签名。

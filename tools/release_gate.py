@@ -39,7 +39,7 @@ audit=json.loads((ROOT/'verification/rc010-npm-audit.json').read_text(encoding='
 check('npmAudit',audit.get('metadata',{}).get('vulnerabilities',{}).get('total')==0,'当前依赖审计')
 audit=json.loads((ROOT/'verification/rc010-python-audit.json').read_text(encoding='utf-8'))
 check('pythonAudit',all(not d.get('vulns') for d in audit.get('dependencies',[])) and len(audit.get('dependencies',[]))==30,'固定的30项 MCP 依赖审计')
-for name in ('rc2-dpi-1-garden-qa','rc2-welcome-qa','install-'+VERSION+'-lifecycle','mcp-'+VERSION+'-qa','rc2-dpi-1.25-garden-qa','rc2-dpi-1.5-garden-qa','rc2-dpi-2-garden-qa'):
+for name in ('rc5-dpi-1-garden-qa','rc5-welcome-qa','install-'+VERSION+'-lifecycle','mcp-'+VERSION+'-qa','rc5-final-garden-qa','rc5-dpi-2-garden-qa'):
     path=ROOT/f'verification/{name}.json'
     check(name,path.is_file() and json.loads(path.read_text(encoding='utf-8-sig')).get('passed') is True,'本轮实际自动化报告')
 check('externalWindowsValidation',False,'待干净 Windows、多显示器、休眠恢复与长时间试用实测')

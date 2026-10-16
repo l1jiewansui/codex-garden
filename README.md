@@ -4,15 +4,15 @@
 
 透明的像素菜园静静待在桌面，不抢键盘输入。单击让园丁走近，双击回到对话；工作间隙，也可以浇水、施肥，照料自己的小菜地。
 
-[下载 Windows 候选版](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.3) · [安装部署手册](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [问题反馈](https://github.com/l1jiewansui/codex-garden/issues)
+[下载 Windows 候选版](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.5) · [安装部署手册](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [问题反馈](https://github.com/l1jiewansui/codex-garden/issues)
 
 ![桌面菜园：像素太阳、园丁、连续菜地、公告栏和收藏箱。演示数据，不含真实对话。](docs/screenshots/garden.png)
 
-> 截图使用演示数据。当前支持 **Windows x64 + Codex 桌面版**；下载包自带运行环境，无需安装 Python 或 Node.js。当前为 **0.10.0-rc.3 候选版**，尚未代码签名或通过公共插件目录审核。
+> 截图使用演示数据。当前支持 **Windows x64 + Codex 桌面版**；下载包自带运行环境，无需安装 Python 或 Node.js。当前为 **0.10.0-rc.5 候选版**，尚未代码签名或通过公共插件目录审核。
 
 ## 三步开始种菜
 
-1. **下载并解压**：在 [Release 页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.3) 下载 `codex-garden-0.10.0-rc.3-windows.zip`，右键选择“全部解压”，不要直接在压缩包里运行。
+1. **下载并解压**：在 [Release 页面](https://github.com/l1jiewansui/codex-garden/releases/tag/v0.10.0-rc.5) 下载 `codex-garden-0.10.0-rc.5-windows.zip`，右键选择“全部解压”，不要直接在压缩包里运行。
 2. **打开菜园**：进入解压后的文件夹，双击 `CodexGarden.exe`。想加入开始菜单，也可以双击 `Install.cmd`，无需管理员权限。
 3. **点击“开始种菜”**：阅读首次说明后确认。打开本机 Codex，稍等几秒，对话就会按置顶顺序出现在菜地上。
 
@@ -81,3 +81,11 @@ Star 数量每日更新，历史从 2026 年 10 月 15 日开始记录。
 ---
 
 [安装部署](docs/INSTALL.md) · [使用指南](docs/USAGE.md) · [隐私说明](PRIVACY.md) · [反馈问题](https://github.com/l1jiewansui/codex-garden/issues) · [开发者文档](docs/DEVELOPMENT.md)
+
+## 固定植物信息与照片园丁
+
+单击植物可固定信息卡，再点同一株关闭，点击其他植物切换。鼠标移开不会关闭固定的信息卡；双击仍然收获并打开对话。翻页或打开公告面板会收起信息卡。
+
+打开公告面板，点击 **照片园丁**，选择10MB以内的 PNG、JPEG 或 WebP 照片。照片在本机提取配色，生成像素园丁，支持行走、浇水和施肥。建议使用人物居中的正面半身照。此功能是照片配色定制，不是人脸还原或 AI 生图。
+
+原照片不会上传或保存到菜园目录，只保留配色参数。点击默认园丁可以切回；右键照片园丁头像可移除。第四位默认园丁已改为白发、护目镜和紫色工作服的工匠形象。

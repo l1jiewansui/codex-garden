@@ -22,7 +22,7 @@ def build():
     shutil.copytree(ROOT/'assets/pixel-v07',app/'assets/pixel-v07')
     shutil.copytree(ROOT/'assets/pixel-v091',app/'assets/pixel-v091')
     (app/'web').mkdir(exist_ok=True)
-    for name in ('pet.html','pet.js','pet.css','art-v04.css','pixel-v04.css','model.js'):
+    for name in ('pet.html','photo-gardener.js','pet.js','pet.css','art-v04.css','pixel-v04.css','model.js'):
         shutil.copy2(ROOT/'web'/name,app/'web'/name)
     for name in ('Install.ps1','Uninstall.ps1','Install.cmd'):
         shutil.copy2(ROOT/'tools'/name,staging/name)

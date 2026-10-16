@@ -378,7 +378,7 @@
     },
     {
       "id": "gardener-3",
-      "name": "栗果 · 栗发园丁",
+      "name": "白发工匠",
       "origin": [
         24,
         44
@@ -807,7 +807,7 @@
   "sourceSha256": {
     "gardeners": "d4f10a82fc06b37e0ed26f3c9d674b6754e520cb58dee7aeda5ac8466efdc866",
     "gardenKit": "a88897b39a83036a940c3d0abec2df7debaaf5788b36d9d3877ed12c2f6b69b6",
-    "portraits": "8bb3c7200c0dc6b10da8e96a29762d1c751965e7beb2f1f915c2a70864c9ac86",
+    "portraits": "8e19e42ec9e70005330dabca610c06756d534bac80c46a4881fedf00748f2296",
     "icons8": "b7d00f41315e8f3e4e8d4cea5e3a8dc17c0a3e1fdf1c6d5cbb4c9aaf0b514c5c",
     "icons9": "79a4df7c746af479ccfdd1ea2d51ddd083ae69209e7417a3cf75d15045b09c10",
     "icons10": "10c063e16b78c2ac7a028bcf84382bfa2d8f6b9a42c542f7af8740b6cec0ccf5",

@@ -4,7 +4,7 @@
 
 将整个插件目录放在固定位置，然后在支持本地插件的 Codex 开发环境中加载根目录的 plugin.json。不要只复制清单：app、server、skills 都是必要文件。不同 Codex 版本的本地插件入口可能不同，请遵循该版本的开发者说明。
 
-本开发工作区的 .agents/plugins/marketplace.json 已登记本地来源，名称“青云桌面菜园”，市场名称“risu1 本地插件”。本机已通过 Codex CLI 安装并启用 0.10.0-rc.3；桌面插件界面的安装显示和新对话调用仍需验收。当前聊天不会自动刷新工具列表，可在宿主重新加载插件后验证。
+本开发工作区的 .agents/plugins/marketplace.json 已登记本地来源，名称“青云桌面菜园”，市场名称“risu1 本地插件”。本机已通过 Codex CLI 安装并启用 0.10.0-rc.5；桌面插件界面的安装显示和新对话调用仍需验收。当前聊天不会自动刷新工具列表，可在宿主重新加载插件后验证。
 
 其他 Windows 开发机可把 marketplace.json 与完整插件目录放入自己的本地市场根目录，按其实际位置调整 source.path，然后使用 `codex plugin marketplace add <市场根目录>` 和 `codex plugin add qingyun-garden@risu1-local-plugins --json` 安装。只登记市场不会自动开启插件。
 
