@@ -125,13 +125,13 @@ def thread_names():
 def order_rows(rows,pinned):
     ranks={value:index for index,value in enumerate(pinned)}
     # Query provides stable creation order for non-pinned conversations.
-    return sorted(rows,key=lambda row:ranks.get(row['id'],len(ranks)))[:24]
+    return sorted(rows,key=lambda row:ranks.get(row['id'],len(ranks)))
 
 def inventory_of(state):
     result={}
     for record in state.values():
         for kind,count in record.get('items',{}).items():
-            if kind.isdigit() and 0<=int(kind)<15 and isinstance(count,int) and count>0:result[kind]=result.get(kind,0)+count
+            if kind.isdigit() and 0<=int(kind)<21 and isinstance(count,int) and count>0:result[kind]=result.get(kind,0)+count
     return result
 
 def secret_plant(thread_id,turn):
@@ -161,7 +161,7 @@ def snapshot():
         d['title']=names.get(d['id'],d['title']) or '未命名对话'
         # The desktop UI needs titles and state, not project paths or message excerpts.
         for field in ('cwd','summary','plan'):d.pop(field,None)
-        d['crop']=int(hashlib.sha256(d['id'].encode()).hexdigest()[:8],16)%3
+        d['crop']=(0,1,2,3,4,5,6,7,8,9,10,15,16,17,18,19,20)[int(hashlib.sha256(d['id'].encode()).hexdigest()[:8],16)%17]
         d['attention']=attention_for(d['id'],attention)
         if d['status']=='ripe' and harvested.get(d['id'],{}).get('turn')==d['turn']: d['status']='harvested'
         threads.append(d)
@@ -178,10 +178,10 @@ def harvest_request(req):
         thread=next((t for t in snapshot()['threads'] if t['id']==req.get('threadId')),None)
         if not thread or thread['status']!='ripe': raise ValueError('这一茬尚未成熟，或已经收获。')
         kind=req.get('plantKind',thread['crop'])
-        if not isinstance(kind,int) or isinstance(kind,bool) or not 0<=kind<15:raise ValueError('无效植物')
+        if not isinstance(kind,int) or isinstance(kind,bool) or not 0<=kind<21:raise ValueError('无效植物')
         secret=secret_plant(thread['id'],thread['turn'])
         if secret is not None:kind=11+secret
-        elif kind>=11:raise ValueError('本轮不是隐藏款')
+        elif 11<=kind<15:raise ValueError('本轮不是隐藏款')
         s=load_state();prev=s.get(thread['id'],{});items=dict(prev.get('items',{}));items[str(kind)]=items.get(str(kind),0)+1
         s[thread['id']]={'turn':thread['turn'],'count':prev.get('count',0)+1,'at':time.time(),'items':items};save_state(s)
         return {'ok':True,'inventory':inventory_of(s)}

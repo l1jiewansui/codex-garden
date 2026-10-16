@@ -1,0 +1,483 @@
+{
+  "version": 2,
+  "frameSize": 48,
+  "origin": [
+    24,
+    44
+  ],
+  "actions": {
+    "idle": {
+      "row": 0,
+      "frames": 2,
+      "durationMs": 520
+    },
+    "walk": {
+      "row": 1,
+      "frames": 9,
+      "durationMs": 140
+    },
+    "water": {
+      "row": 2,
+      "frames": 8,
+      "durationMs": 150
+    },
+    "feed": {
+      "row": 3,
+      "frames": 6,
+      "durationMs": 190
+    }
+  },
+  "headPoses": {
+    "idle": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "walk": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "water": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "feed": [
+      [
+        0,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "parts": {
+    "boots0": {
+      "file": "boots0.png",
+      "material": "boots0-material.png",
+      "sha256": "298da9f3345778d942bc29852520c10161b9c2b94518c6c2168e05d70ae987a2",
+      "materialSha256": "d5c0dcc84dda126d7e01924bdfd4cfc075b8e4ae9a187fe39fef255e22f28ee2",
+      "group": 0
+    },
+    "coat0": {
+      "file": "coat0.png",
+      "material": "coat0-material.png",
+      "sha256": "50b66e5eb9b8705f476af7b5764a00a8a6b3459c46aa657658ecce31114f2548",
+      "materialSha256": "d7c8ce16ed17dd381b325e2002044c54750f72bc2b5f58e0368cb0ab72ea3932",
+      "group": 4
+    },
+    "shirt0": {
+      "file": "shirt0.png",
+      "material": "shirt0-material.png",
+      "sha256": "9ab13e56d0e74b16ae59290ddd591afd672095288d357eccee2ae24158594491",
+      "materialSha256": "2ed8f4b27a190137165b3aafc8d4c3bd07f5d9692ccd5bfd86f135e926526301",
+      "group": 3
+    },
+    "tools0": {
+      "file": "tools0.png",
+      "material": "tools0-material.png",
+      "sha256": "969200bebe675df3ad62ab08a01d21c458398becaea00aa15b232c9c55cecfb3",
+      "materialSha256": "6e51774e0b84369fdef298446437f07aa24daf06d152c08207e806f042fd3636",
+      "group": 0
+    },
+    "boots1": {
+      "file": "boots1.png",
+      "material": "boots1-material.png",
+      "sha256": "bd1a9f74e337da64a8478a19e7cdb317b263b00445e40d2c0b786dc8f301cd7b",
+      "materialSha256": "94567db9b0c94ecc89ec89f3acdf868c91c9eb9bc080404f3aa803fc6e7b2e45",
+      "group": 0
+    },
+    "coat1": {
+      "file": "coat1.png",
+      "material": "coat1-material.png",
+      "sha256": "0b67dcd1614717dc4a1cd68c9d5bbaa8cd9ba89a61cc28887536a3f98c4bb23c",
+      "materialSha256": "f2a95da41c9006ea6a78ac8f5ad6a5d129e37b9ccebd623dd387ab1feec5c077",
+      "group": 4
+    },
+    "shirt1": {
+      "file": "shirt1.png",
+      "material": "shirt1-material.png",
+      "sha256": "6841a0780487e67254dfd8990506a235d2f52279fd84a56d609f46684ec92fdd",
+      "materialSha256": "5821304728f90b28aa7f53b16e2909df5d4a394f16bf9f9d62df4f9a8634fd87",
+      "group": 3
+    },
+    "tools1": {
+      "file": "tools1.png",
+      "material": "tools1-material.png",
+      "sha256": "2645c3daaf7f234424ae5a07dc01f25aed7a5623b0cb092c531fca3eec91742c",
+      "materialSha256": "ddd4dfccb2731fe4551be4d11af5326cf1e4910f3df00bcfc0ca895cfcc33c6e",
+      "group": 0
+    },
+    "boots2": {
+      "file": "boots2.png",
+      "material": "boots2-material.png",
+      "sha256": "e257557d641fcfcbe7f5ff679ccbdc456429953597ef7bd95e78c7ad4b903d4e",
+      "materialSha256": "610fe293b21c74302fc361f5a0311c2ff0f786276ff0e50922c2f7e87643dfd7",
+      "group": 0
+    },
+    "coat2": {
+      "file": "coat2.png",
+      "material": "coat2-material.png",
+      "sha256": "c038e01b789c30d5b33f63fae03c01d7e52440a5b847be8de47547cdf7052d4e",
+      "materialSha256": "1ff6b020a86e796f36f9566e7170d41fb6fa41301e50158d5be02e8e924d779a",
+      "group": 4
+    },
+    "shirt2": {
+      "file": "shirt2.png",
+      "material": "shirt2-material.png",
+      "sha256": "1667487783596f345c06fca0bd51f1bd930aa0a3a48d58a49e45da04465bb752",
+      "materialSha256": "50e52a90e4a265de2adeaccf13e2c26a0651935c316e97a8e1184c90b9a245e7",
+      "group": 3
+    },
+    "tools2": {
+      "file": "tools2.png",
+      "material": "tools2-material.png",
+      "sha256": "c8e863861c26a8493cd73ee45ecacb7403eb25f6f680dc9cac5a6ef3fab80b23",
+      "materialSha256": "50cc1957fbc4d240d49b899100e9aa93309fcfe3641249ff1eb883079664d594",
+      "group": 0
+    },
+    "scalp0": {
+      "file": "scalp0.png",
+      "material": "scalp0-material.png",
+      "sha256": "cda6c4b454313c049dfaa0d443a7ba3c5fac003dc8f3e06c73d40e8b74a640cd",
+      "materialSha256": "ab446aa8f31527339b50a994ae97695e2535dc49efbc374cb413f32b434dc670",
+      "group": 1
+    },
+    "face0": {
+      "file": "face0.png",
+      "material": "face0-material.png",
+      "sha256": "cb14a2166c396e2817da1739676ad39882e7b967c52667b3fd81c7f99ce6d9e0",
+      "materialSha256": "73ae88e05776f59285428439ff556d6cd5319593a5e6521bd5917339956251dc",
+      "group": 1
+    },
+    "hairBack0": {
+      "file": "hairBack0.png",
+      "material": "hairBack0-material.png",
+      "sha256": "d8a1d237484135719243189afc5ed0eb6723a4557776b33dd691b81d911c80a0",
+      "materialSha256": "076c272102ab65d3a1177a19ad058acfbe20c645409a1202a98d58ca8a74f81d",
+      "group": 2
+    },
+    "hairFront0": {
+      "file": "hairFront0.png",
+      "material": "hairFront0-material.png",
+      "sha256": "e1be6148c3f7384e35a862e2ec574352c66c1aba9acc839a7f278729de1a82e8",
+      "materialSha256": "453e719bf0c98d60941b001b2a579075d070c57a3cb05fa49417a5bde6b6f1d0",
+      "group": 2
+    },
+    "hat0": {
+      "file": "hat0.png",
+      "material": "hat0-material.png",
+      "sha256": "514d1d15325208822e6c2b2e95c6427a0702b9c3ab21d466c7516b8fc03ceafd",
+      "materialSha256": "fcbd045859509c09484fe56857497d4e909f6c7f724a9052ebc9c83443e0bf53",
+      "group": 7
+    },
+    "scalp1": {
+      "file": "scalp1.png",
+      "material": "scalp1-material.png",
+      "sha256": "a216edc66a8294ec48544f8d51fcf5db682921b966ca3f7c226bd0ba09b8ca03",
+      "materialSha256": "95d45257a6781f61e512c49a5107f256c57026a10088937cc90bfa5c8833a784",
+      "group": 1
+    },
+    "face1": {
+      "file": "face1.png",
+      "material": "face1-material.png",
+      "sha256": "f3587e0fdd6ec8873b30e59ee25ade603078f5c3459c29e4604b5d31b5675355",
+      "materialSha256": "ec82d62f06488f44f63b56adae503006ffe5be8af0c2c8b3abc53343eb4fdf33",
+      "group": 1
+    },
+    "hairBack1": {
+      "file": "hairBack1.png",
+      "material": "hairBack1-material.png",
+      "sha256": "982995469776a54a09f21f918661b41151a22a6847da2a83aee9c79e91de5ae7",
+      "materialSha256": "a7605abc137c78800f1e69c36a52ea86eeff1e5f60b05063775fde285fce2464",
+      "group": 2
+    },
+    "hairFront1": {
+      "file": "hairFront1.png",
+      "material": "hairFront1-material.png",
+      "sha256": "8fe63278971fa8c57a3fc1ee10d54055f37f797c6b93d574544d49d23f8deac2",
+      "materialSha256": "dc026925fec993fc6edb2c557919f8f0606bb6ffecb67c46afe58c96cafbb26f",
+      "group": 2
+    },
+    "hat1": {
+      "file": "hat1.png",
+      "material": "hat1-material.png",
+      "sha256": "4bd57822c323bfb34381e48e8c451e210d7b2d286d20dcff5b5e134890b965e7",
+      "materialSha256": "4bd57822c323bfb34381e48e8c451e210d7b2d286d20dcff5b5e134890b965e7",
+      "group": 7
+    },
+    "scalp2": {
+      "file": "scalp2.png",
+      "material": "scalp2-material.png",
+      "sha256": "2659896773f1c251fcf4bfd550c9c3fb11b97f408a31e496f32545a98c4e5765",
+      "materialSha256": "5d7166dfa3a9b16defe0027361e3568b2b3b0f32186d42b80e0e466af8316010",
+      "group": 1
+    },
+    "face2": {
+      "file": "face2.png",
+      "material": "face2-material.png",
+      "sha256": "cfdf85c0c8bc063375fd7e8fcefedede8a16fc388f2955f59084ac0edc072536",
+      "materialSha256": "7d1e2ff32faf0443197c9085fa62299cf3e70bd5e5e18bb72827c86e8e529203",
+      "group": 1
+    },
+    "hairBack2": {
+      "file": "hairBack2.png",
+      "material": "hairBack2-material.png",
+      "sha256": "f3b0240011e982a15d19f911b46f5c7c04be32a25a84b75c2deb12689f367b75",
+      "materialSha256": "646a1596a407f655b334ca903b0398d9ca766e04fd2f639c3388ae19d8c0773c",
+      "group": 2
+    },
+    "hairFront2": {
+      "file": "hairFront2.png",
+      "material": "hairFront2-material.png",
+      "sha256": "21b7aa8792a72922e769b495d5c2fe7b7a906ac652514d958571ee9eb091d7e2",
+      "materialSha256": "97e50ad7ff5830b8255ed745135914055ed2bcbb37155a1ca50e55de94a0dcd7",
+      "group": 2
+    },
+    "hat2": {
+      "file": "hat2.png",
+      "material": "hat2-material.png",
+      "sha256": "84a998ce137aa2fc00b3c3e42cac7538f50581429b807f1a39fc1707a13711a9",
+      "materialSha256": "cc748fcff2cbf7fbc52d4f0371ccd4b61ef8d379f1a26ddc3a8b5d651caf9db6",
+      "group": 7
+    },
+    "hairFront-pony": {
+      "file": "hairFront-pony.png",
+      "material": "hairFront-pony-material.png",
+      "sha256": "8fe63278971fa8c57a3fc1ee10d54055f37f797c6b93d574544d49d23f8deac2",
+      "materialSha256": "dc026925fec993fc6edb2c557919f8f0606bb6ffecb67c46afe58c96cafbb26f",
+      "group": 2
+    },
+    "hairBack-pony": {
+      "file": "hairBack-pony.png",
+      "material": "hairBack-pony-material.png",
+      "sha256": "17f66bcadd49aa7887e91e62fa173bdcc3ac4c5ecd286c35bc7b89d393f41c16",
+      "materialSha256": "e26503f076feb29c0eb3660b903d11486cf46326e152c7ff8bf94e27fb784a15",
+      "group": 2
+    },
+    "hairFront-braid": {
+      "file": "hairFront-braid.png",
+      "material": "hairFront-braid-material.png",
+      "sha256": "8fe63278971fa8c57a3fc1ee10d54055f37f797c6b93d574544d49d23f8deac2",
+      "materialSha256": "dc026925fec993fc6edb2c557919f8f0606bb6ffecb67c46afe58c96cafbb26f",
+      "group": 2
+    },
+    "hairBack-braid": {
+      "file": "hairBack-braid.png",
+      "material": "hairBack-braid-material.png",
+      "sha256": "62f432fdf65c6d2bd8351713bd47d441f2600b8b7203ae0888aa4c86c73e1343",
+      "materialSha256": "8017b62f7a04c005eb0864d0160b1d63c462c75e4a7dbad1f476752ec79f8aac",
+      "group": 2
+    },
+    "hairFront-curly": {
+      "file": "hairFront-curly.png",
+      "material": "hairFront-curly-material.png",
+      "sha256": "2d35430b1f26f6a73ecf1ed3921617e088f0653cdaf0703d540c5f2e4aabe182",
+      "materialSha256": "023b93c6a75bed613a6354976fd7ec59db7f014d18912901ff9ff6fa27caf161",
+      "group": 2
+    },
+    "hairBack-curly": {
+      "file": "hairBack-curly.png",
+      "material": "hairBack-curly-material.png",
+      "sha256": "982995469776a54a09f21f918661b41151a22a6847da2a83aee9c79e91de5ae7",
+      "materialSha256": "a7605abc137c78800f1e69c36a52ea86eeff1e5f60b05063775fde285fce2464",
+      "group": 2
+    },
+    "face-round": {
+      "file": "face-round.png",
+      "material": "face-round-material.png",
+      "sha256": "5102c0760b565efdb7852c7481a67501f76db2d40355405f3ec2625e18001262",
+      "materialSha256": "4a9d603a0b0675cb550c6dd3cb4a7c9cafe7eefbc156e55d4485ea6662114361",
+      "group": 1
+    },
+    "face-small": {
+      "file": "face-small.png",
+      "material": "face-small-material.png",
+      "sha256": "170944f9cff92190451d857ed3d9e023a94eec0ff114f4c937b09f136ad1fb79",
+      "materialSha256": "397d8f39a6dec2cda921788a515446e256de8d62fe6e5e0ed011efa20e477e25",
+      "group": 1
+    },
+    "face-elder": {
+      "file": "face-elder.png",
+      "material": "face-elder-material.png",
+      "sha256": "9ab95790dfe4ea930f124fceb922b8134e865a08666e71601628732143f8bdce",
+      "materialSha256": "5ec791846de8a7db83a1dc327a231d85dfb32ba1efab3015bedf97633e690500",
+      "group": 1
+    },
+    "beard": {
+      "file": "beard.png",
+      "material": "beard-material.png",
+      "sha256": "158496ed8723429076ef9c5e930ecf8a5a458a6ac2b2a68d1fbd9718fb7695ee",
+      "materialSha256": "74754c60e32cce423dfb4e05c0ff24e9aaf8533749afd6ef98cb1ba80b703b31",
+      "group": 2
+    }
+  },
+  "reference": [
+    {
+      "name": "麦穗",
+      "rgbaSha256": "884ef710911154c5bcd2161e8873aa8b744af274d6d0285c35b4b0ad1de85874",
+      "preservedSourceFrames": 11,
+      "frames": 25,
+      "sourceIdleRgbaSha256": "fb23e329051b231bf7fcb05999647a1b100a30016c91874483eef98019e68207"
+    },
+    {
+      "name": "桃桃",
+      "rgbaSha256": "d54cba9f1ad497609ed40cdb5ba2a1a535d44869463eb63c1066fe3710741808",
+      "preservedSourceFrames": 11,
+      "frames": 25,
+      "sourceIdleRgbaSha256": "9df49f2b6ecbe37b30472d437eb3c513f8c3577263bad79cc6e643b36d878a2a"
+    },
+    {
+      "name": "夜蓝",
+      "rgbaSha256": "f33972f6e96c00b9f2963be730576d06331846c6f9e77e09a101f45e123a3344",
+      "preservedSourceFrames": 11,
+      "frames": 25,
+      "sourceIdleRgbaSha256": "e0da3301d7c73fc138ad9696660316c6cbc402073543b959b5d437336e193fea"
+    }
+  ],
+  "sourceArchive": "archives/default-gardeners-rc11",
+  "reconstruction": "authored semantic masks, back/front hair, complete scalp, shared care rig",
+  "eyePixels": [
+    [
+      [
+        25,
+        23
+      ],
+      [
+        30,
+        23
+      ]
+    ],
+    [
+      [
+        25,
+        23
+      ],
+      [
+        30,
+        23
+      ]
+    ],
+    [
+      [
+        26,
+        24
+      ],
+      [
+        31,
+        24
+      ]
+    ]
+  ],
+  "preservedSourceFrames": 33,
+  "careFrames": "42 re-registered care frames; archived originals remain unchanged",
+  "editor": {
+    "repository": "https://github.com/LibreSprite/LibreSprite",
+    "version": "v1.3",
+    "commit": "cdb12a323ce5ec4fce3512bc6590a90228f15bb9",
+    "binarySha256": "f84a916ba1e5c43b63961b40a21c2e38fd5b31ee39b0e240b89e0f4d3fa27cde",
+    "sources": [
+      {
+        "file": "art/classic/native-parts.aseprite",
+        "sha256": "8874489f4feb90a7b48fd29201bd625560824c9445c4b38f57060df2d3485a28"
+      },
+      {
+        "file": "art/classic/native-materials.aseprite",
+        "sha256": "1fedde96ce55f07f4791f1e78cfac273937ff7080563c0074982a813d4cb2830"
+      }
+    ],
+    "exportedLayers": 74,
+    "linkedHeadCels": true,
+    "canvas": [
+      48,
+      48
+    ],
+    "frameCount": 25
+  }
+}

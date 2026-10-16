@@ -16,3 +16,7 @@ assert.deepEqual(orderedThreads([{id:'demo-1'},{id:'demo-0'}]).map(t=>t.id),['de
 assert.equal(gardenName('  我的花园\n\u202e  '),'我的花园');assert.equal(gardenName(' '),'我的菜园');
 assert.equal(Array.from(gardenName('🌱'.repeat(30))).length,24);assert.equal(gardenName(null),'我的菜园');
 console.log('Sequential conversation/plant order and safe persistent garden names passed.');
+
+const {panCamera}=require('../web/model.js');
+assert.equal(panCamera(0,1,0),0);assert.equal(panCamera(0,1,1),0);assert.equal(panCamera(0,1,4),0);assert.equal(panCamera(0,1,8),144);assert.equal(panCamera(144,1,8),144);assert.equal(panCamera(144,-1,8),0);assert.equal(panCamera(288,1,100),432);
+console.log('Garden panning keeps the final plants visible and never opens an empty tail.');

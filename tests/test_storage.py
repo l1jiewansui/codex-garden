@@ -36,10 +36,16 @@ class StorageTests(unittest.TestCase):
    self.assertEqual((root/'harvest.json').read_text(),'{bad')
  def test_new_schema_is_not_rolled_back(self):
   with tempfile.TemporaryDirectory() as folder:
-   root=Path(folder);store.save(root,state(1));(root/'harvest.json').write_text(json.dumps({'schemaVersion':2,'threads':state(2)}))
+   root=Path(folder);store.save(root,state(1));(root/'harvest.json').write_text(json.dumps({'schemaVersion':3,'threads':state(2)}))
    with self.assertRaises(store.StorageError):store.load(root)
    with self.assertRaises(store.StorageError):store.save(root,state(3))
  def test_invalid_counts_are_rejected_before_writing(self):
   with tempfile.TemporaryDirectory() as folder:
    with self.assertRaises(store.StorageError):store.save(folder,{'t':{'count':0,'items':{'0':1}}})
    self.assertFalse((Path(folder)/'harvest.json').exists())
+ def test_fantasy_plants_roundtrip_with_new_schema_and_old_inventory(self):
+  with tempfile.TemporaryDirectory() as folder:
+   value={'t':{'count':3,'items':{'0':1,'15':1,'20':1}}}
+   store.save(folder,value)
+   self.assertEqual(store.load(folder)[0],value)
+   self.assertEqual(json.loads((Path(folder)/'harvest.json').read_text())['schemaVersion'],2)

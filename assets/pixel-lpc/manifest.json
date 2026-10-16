@@ -1,0 +1,278 @@
+{
+  "version": 2,
+  "recipeSha256": "85c7718056acb65b4031e5ff8a0460de4604314095afb725e5553ab11c0fea85",
+  "repository": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+  "commit": "9bf06be193b053db256b2536824af426de046aa2",
+  "frameSize": 48,
+  "origin": [
+    24,
+    44
+  ],
+  "palette": [
+    "#25252f",
+    "#36343a",
+    "#4b3936",
+    "#60443a",
+    "#7b5740",
+    "#9b6c47",
+    "#bb8e5c",
+    "#b47b5f",
+    "#d99d73",
+    "#f0c295",
+    "#f5d7ad",
+    "#706c55",
+    "#9b9874",
+    "#c3ba8b",
+    "#e3d5a9",
+    "#f6eac3",
+    "#263f35",
+    "#35553b",
+    "#4c6f3e",
+    "#6a8b48",
+    "#91ac58",
+    "#bdd078",
+    "#26374b",
+    "#37536a",
+    "#4d7387",
+    "#77a0ae",
+    "#b0c9c7",
+    "#243f44",
+    "#34636b",
+    "#548e91",
+    "#8cb6ad",
+    "#6b393d",
+    "#93464a",
+    "#bc6261",
+    "#e38d7c",
+    "#895a30",
+    "#b57b35",
+    "#dca04a",
+    "#f5c86c",
+    "#ffe3a3",
+    "#686575",
+    "#90879d",
+    "#b8a7bb",
+    "#ae7683",
+    "#d49b9c",
+    "#f0c1ae",
+    "#f7f1dc"
+  ],
+  "actions": {
+    "idle": {
+      "row": 0,
+      "frames": 2,
+      "durationMs": 180
+    },
+    "walk": {
+      "row": 1,
+      "frames": 9,
+      "durationMs": 140
+    },
+    "water": {
+      "row": 2,
+      "frames": 8,
+      "durationMs": 180
+    },
+    "feed": {
+      "row": 3,
+      "frames": 6,
+      "durationMs": 180
+    }
+  },
+  "parts": {
+    "body": {
+      "file": "body.png",
+      "sha256": "7ccb058c76ab6a70737c8352c53c1d2fa59b940a18ff75a50f37437e24bb2774",
+      "sourceSha256": "c98314f791a2cf280c8297c70e97a2cb3019b68fa669574f8d2ac1e13855a2a0",
+      "source": "body/bodies/male",
+      "creditId": "body/body",
+      "material": 1
+    },
+    "head": {
+      "file": "head.png",
+      "sha256": "f8625ef3e8496e009eb06d420c64646dc3ec80f0e6f6b1f8d93276c1c6aaa7da",
+      "sourceSha256": "a0906e52e05bd1c8ab65c2e868e9138ea1f3f892aa6a08d90c465682fe5cf329",
+      "source": "head/heads/human/male",
+      "creditId": "head/heads/human/heads_human_male",
+      "material": 1
+    },
+    "headSoft": {
+      "file": "headSoft.png",
+      "sha256": "b333f9936c0c0f5f9862d989c7acad8c740c58f42f838bdd670ad67b1f80071a",
+      "sourceSha256": "9b99ec585838bc24dc8817289306475151cf64af30ac2c256a6fa27dc3d8b2eb",
+      "source": "head/heads/human/female",
+      "creditId": "head/heads/human/heads_human_female",
+      "material": 1
+    },
+    "headRound": {
+      "file": "headRound.png",
+      "sha256": "f0d0cb9230a78b6fa140b755a49e211b2ebbe679c132f75f1de4474b587875fe",
+      "sourceSha256": "8b6aa9e116dbe612eb4526cb3a3597cff84b895f64db8334a899c1fed53cb1f3",
+      "source": "head/heads/human/male_plump",
+      "creditId": "head/heads/human/heads_human_male_plump",
+      "material": 1
+    },
+    "headAngular": {
+      "file": "headAngular.png",
+      "sha256": "d520778d3a2b10a50d11ee373aacbd4c1b7e68ab6319c619f602cc417821495b",
+      "sourceSha256": "432431fcffa5045a9ea13ebaaef6f80ba783495600567f14f33d5ff1419c44ec",
+      "source": "head/heads/human/male_gaunt",
+      "creditId": "head/heads/human/heads_human_male_gaunt",
+      "material": 1
+    },
+    "headElder": {
+      "file": "headElder.png",
+      "sha256": "c3e051bded5f1b63e4cc488cffc1da6b78bd15890480ea88882e8d290d0a300d",
+      "sourceSha256": "9b536b9bf92bb9c46b114aa297e36d594c8143ecc704411a9158e6af597c2237",
+      "source": "head/heads/human/male_elderly",
+      "creditId": "head/heads/human/heads_human_male_elderly",
+      "material": 1
+    },
+    "headSmall": {
+      "file": "headSmall.png",
+      "sha256": "dde6cdc4d3ef24d6c38d828baf917c97a66127a1842e2cb9c97332e67f853f45",
+      "sourceSha256": "d7fe11f2e3c19a1b887066921e6895a12f785510dc0eb80152b3641b4068e1e7",
+      "source": "head/heads/human/male_small",
+      "creditId": "head/heads/human/heads_human_male_small",
+      "material": 1
+    },
+    "noseButton": {
+      "file": "noseButton.png",
+      "sha256": "c693ee195f34537b3c9609c43281cdab67b33fd0c6c36695f82a0d1ec3d2b3d6",
+      "sourceSha256": "86c72d845fee50020e82b6f2c4d2890342135b1e2ee8f99db94d681cd6cdc777",
+      "source": "head/nose/button/adult",
+      "creditId": "head/nose/head_nose_button",
+      "material": 1
+    },
+    "noseLarge": {
+      "file": "noseLarge.png",
+      "sha256": "d22fcf6f690d6f196104ff8688979bf98cc4234d522bb426df9f50ae154003d4",
+      "sourceSha256": "c9d3223bbdbd738bac77b407d89371325b5563535496bea08cfd161524a56ad0",
+      "source": "head/nose/large/adult",
+      "creditId": "head/nose/head_nose_large",
+      "material": 1
+    },
+    "noseStraight": {
+      "file": "noseStraight.png",
+      "sha256": "9cdd867efa45e1164abc64b1d157a7c9f8f37ba7b5c47253cc95f5a8473474f2",
+      "sourceSha256": "7d2fd59191edbdadb9be1b801cc0c26eb8030a3ecbffec809ba939eed3c8c99f",
+      "source": "head/nose/straight/adult",
+      "creditId": "head/nose/head_nose_straight",
+      "material": 1
+    },
+    "curly": {
+      "file": "curly.png",
+      "sha256": "19888f1f84246bea5890242d8c29a4cad79007467e7fa5c03c3fc573f1257fc8",
+      "sourceSha256": "b4ee0bf57aacdecf1841e0d89890dcb494cf5deed17bf1e49c3697c5ce61d92c",
+      "source": "hair/curly_short/adult",
+      "creditId": "hair/curly/hair_curly_short",
+      "material": 2
+    },
+    "pixie": {
+      "file": "pixie.png",
+      "sha256": "68e6e63fa6f2d1c5943c08cd32cb8edd42d64febb27c8406b1a54513c56bfc9a",
+      "sourceSha256": "20bcbe09b4c49bf7dae8451da6b8e155bcef4d6aa34ab2d056dc700010b6f9bf",
+      "source": "hair/pixie/adult",
+      "creditId": "hair/short/hair_pixie",
+      "material": 2
+    },
+    "ponyBack": {
+      "file": "ponyBack.png",
+      "sha256": "ba909503f3d3a05f482f0dc91e4651d143920f8c46fc77b7615e99cd95677e9c",
+      "sourceSha256": "c7e01f4b5f6a350089a9ae2345c9f3235db545332bbb533e1911ef8d0325d809",
+      "source": "hair/ponytail/adult/bg",
+      "creditId": "hair/braids/hair_ponytail",
+      "material": 2
+    },
+    "pony": {
+      "file": "pony.png",
+      "sha256": "eb26eb549fa85aaf67db16b621ba832f44f76a1411f2f21e24a0ff041c4b7e5d",
+      "sourceSha256": "aaca2278cce131b7f489ad40d66d003715a0a3816efb1a2d4a254ea53f891533",
+      "source": "hair/ponytail/adult/fg",
+      "creditId": "hair/braids/hair_ponytail",
+      "material": 2
+    },
+    "braidBack": {
+      "file": "braidBack.png",
+      "sha256": "736b2f3d1b4e72aa3928469c7342033ed130b65fb9c2b58cd5b0bf2666b9c794",
+      "sourceSha256": "77a74df4f79fed787c6b6553e7bfde0387126f6e3a7b54e71747b139e067b9e9",
+      "source": "hair/braid/adult/bg",
+      "creditId": "hair/braids/hair_braid",
+      "material": 2
+    },
+    "braid": {
+      "file": "braid.png",
+      "sha256": "23600c0d409a505aea9678ec5e81aa559adffecd3e25b31ff0174781a486ce7a",
+      "sourceSha256": "e72b2cdc27ea2a57f7d9fcadcc4a3ed6b7e6c9b629d0389d10cd10c036370c3c",
+      "source": "hair/braid/adult/fg",
+      "creditId": "hair/braids/hair_braid",
+      "material": 2
+    },
+    "hat": {
+      "file": "hat.png",
+      "sha256": "8de3c04c4e769b5a30e59fb2d2a24dee5a5bdf651e93d0e0d465b44de1b537f9",
+      "sourceSha256": "ca0d8c1467605d8f7b822d3cf275e05c3d4d210e0d5a70825af03d06507f6177",
+      "source": "hat/pirate/bonnie/adult",
+      "creditId": "headwear/hats/caps/hat_cap_bonnie",
+      "material": 7
+    },
+    "beard": {
+      "file": "beard.png",
+      "sha256": "2614fe5d65f83b18b6597aac4f3a5ff1b3c1dde3d74efc2b55b387265d545263",
+      "sourceSha256": "ae19ad5cda9927c01a3e6a47aaeab055f78d241b285ebe8969e297381743f838",
+      "source": "beards/beard/basic",
+      "creditId": "hair/beards/beards_beard",
+      "material": 2
+    },
+    "shirt": {
+      "file": "shirt.png",
+      "sha256": "9659a9c2e92cba789bc84bd6a7051441b99b95d5811a16466ec4d69d36884b12",
+      "sourceSha256": "df9f9496bee35fd6bed47d45c5a3e095ace49552d3aa5833470df5e58f6ed603",
+      "source": "torso/clothes/longsleeve/longsleeve/male",
+      "creditId": "torso/shirts/longsleeve/torso_clothes_longsleeve",
+      "material": 3
+    },
+    "overalls": {
+      "file": "overalls.png",
+      "sha256": "cf248c8c1e01f9574f227d4be65292524b6c2cb4f7161a45721756f54e7cb17f",
+      "sourceSha256": "b23ff2a04cc75ec98bdd146304e3d61f03a294efd9dca999410e7c8795e0a843",
+      "source": "torso/aprons/overalls/male",
+      "creditId": "torso/aprons/torso_aprons_overalls",
+      "material": 4
+    },
+    "pants": {
+      "file": "pants.png",
+      "sha256": "39f5d4c613d1078af1998783c79c947fc9549eefffe006c099836ca7f875e2ac",
+      "sourceSha256": "cd2a17b360e5af22d8aa6957d6a0c85b89809a589a4a47aa49072c49769c1f0f",
+      "source": "legs/pants/male",
+      "creditId": "legs/pants/legs_pants",
+      "material": 5
+    },
+    "boots": {
+      "file": "boots.png",
+      "sha256": "dcff985a16f303ac2d80a1ebd62f0db5527cb348ecc46e3ffaa18a0e6940cfe0",
+      "sourceSha256": "542f8377a8585fe327e88bf5d6a783cf664963bb467526f6f3d24b55595b9788",
+      "source": "feet/boots/basic/male",
+      "creditId": "feet/boots/feet_boots_basic",
+      "material": 6
+    },
+    "canBack": {
+      "file": "canBack.png",
+      "sha256": "4bd57822c323bfb34381e48e8c451e210d7b2d286d20dcff5b5e134890b965e7",
+      "sourceSha256": "c1db765e5a0bee70a9ea5a692fffe49962e67cc00565d16b626ad7697b4baeb7",
+      "source": "tools/watering_can/bg",
+      "creditId": "tools/tool_watering_can",
+      "material": 0
+    },
+    "can": {
+      "file": "can.png",
+      "sha256": "faead98e263e2e30bff678277bc8951cbc7934d426e24693b213641ea5710f66",
+      "sourceSha256": "39b64a032a499ce6ad13dea38dd4a8caf7642baf4bd32ed7bcf38b347d36759d",
+      "source": "tools/watering_can/fg",
+      "creditId": "tools/tool_watering_can",
+      "material": 0
+    }
+  },
+  "encoding": "R=material (0=literal palette, 8=iris), G=ramp or palette index; binary alpha",
+  "transform": "shared fixed mesh; enlarged head, compact body; no per-frame recentering"
+}

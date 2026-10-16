@@ -5,3 +5,10 @@
 *.ico binary
 *.woff2 binary
 *.ttf binary
+*.aseprite binary
+# Preserve immutable archive bytes referenced by SHA256.json.
+archives/default-gardeners-rc11/** -text
+assets/gardener-recipes.json -text
+assets/pixel-lpc/recipes.json -text
+# Vendored source hashes describe the original bytes.
+backend/pixel_pipeline/** -text

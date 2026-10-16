@@ -8,7 +8,7 @@ class StorageError(ValueError):pass
 def validate(raw):
     if not isinstance(raw,dict):raise StorageError('收藏格式不正确')
     if 'schemaVersion' in raw:
-        if raw['schemaVersion']!=1:raise StorageError('收藏来自较新版本，请先更新菜园')
+        if raw['schemaVersion'] not in (1,2):raise StorageError('收藏来自较新版本，请先更新菜园')
         raw=raw.get('threads')
     if not isinstance(raw,dict):raise StorageError('收藏格式不正确')
     for key,record in raw.items():
@@ -19,7 +19,7 @@ def validate(raw):
         items=record.get('items',{})
         if not isinstance(items,dict):raise StorageError('收藏品种不正确')
         for kind,n in items.items():
-            if not isinstance(kind,str) or not kind.isdigit() or not 0<=int(kind)<15 or type(n) is not int or n<0:raise StorageError('收藏品种不正确')
+            if not isinstance(kind,str) or not kind.isdigit() or not 0<=int(kind)<21 or type(n) is not int or n<0:raise StorageError('收藏品种不正确')
         if sum(items.values())>count:raise StorageError('收藏总数不一致')
     return raw
 
@@ -50,6 +50,11 @@ def atomic_write(path,value):
     finally:
         if os.path.exists(name):os.unlink(name)
 
+def envelope(state):
+    # Older builds reject schema 2 instead of mistaking new plants for damage.
+    version=2 if any(int(k)>=15 for record in state.values() for k in record.get('items',{})) else 1
+    return {'schemaVersion':version,'threads':state}
+
 def save(folder,state):
     state=validate(state);folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     primary=folder/'harvest.json'
@@ -65,9 +70,9 @@ def save(folder,state):
             for index in (3,2):
                 source=folder/f'harvest.bak.{index-1}.json'
                 if source.exists():os.replace(source,folder/f'harvest.bak.{index}.json')
-            atomic_write(folder/'harvest.bak.1.json',{'schemaVersion':1,'threads':previous})
-    atomic_write(primary,{'schemaVersion':1,'threads':state})
-    try:atomic_write(folder/'harvest.recovery.json',{'schemaVersion':1,'threads':state})
+            atomic_write(folder/'harvest.bak.1.json',envelope(previous))
+    atomic_write(primary,envelope(state))
+    try:atomic_write(folder/'harvest.recovery.json',envelope(state))
     except OSError:return False
     return True
 

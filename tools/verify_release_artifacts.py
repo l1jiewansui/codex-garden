@@ -22,7 +22,8 @@ for name in (WINDOWS_ZIP.name,PLUGIN_ZIP.name):
     archives.append({'file':name,'sha256':digest,'bytes':file.stat().st_size})
 folder=Path.home()/'.codex/plugins/cache/risu1-local-plugins/qingyun-garden'/VERSION
 records=json.loads((ROOT/f'verification/host-plugin-list-{VERSION}.json').read_text(encoding='utf-8-sig'))['installed']
-assert len(records)==1 and records[0]['installed'] and records[0]['enabled']
+records=[r for r in records if r.get('pluginId')=='qingyun-garden@risu1-local-plugins']
+assert len(records)==1 and records[0]['installed'] and records[0]['enabled'] and records[0]['version']==VERSION
 assert json.loads((ROOT/f'verification/mcp-{VERSION}-qa.json').read_text())['passed']
 host={'passed':True,'pluginId':records[0]['pluginId'],'version':VERSION,'installed':True,'enabled':True,'cacheVerifiedFiles':verify_folder(folder),'cacheMcpProtocolTest':True,'uiAndNewChatValidation':False}
 (ROOT/f'verification/host-install-{VERSION}.json').write_text(json.dumps(host,indent=2),encoding='utf-8')

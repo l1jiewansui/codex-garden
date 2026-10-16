@@ -13,10 +13,11 @@
  function matches(t,filter){return filter==='all'||(filter==='care'?CARE.includes(t.status):t.status===filter);}
  function cropStage(status){return status==='ripe'?3:status==='growing'?2:status==='harvested'?0:1;}
  function stepWalker(x,target,seconds){const goal=Math.max(22,Math.min(194,target)),distance=goal-x,step=48*Math.max(0,Math.min(seconds,.1));return Math.abs(distance)<=step?goal:x+Math.sign(distance)*step;}
+ function panCamera(camera,delta,count){const max=Math.max(0,Math.floor(Math.max(0,count-1)/4)*144);return Math.max(0,Math.min(max,camera+delta*144));}
  const geometry=Object.freeze({surfaceY:60,cropHeight:20,cropY:40,soilBottom:74,interactionOffset:18});
  function stepWorld(x,target,seconds){const d=target-x,step=48*Math.max(0,Math.min(seconds,.1));return Math.abs(d)<=step?target:x+Math.sign(d)*step;}
  function followCamera(x,camera){return x-camera>150?x-150:x-camera<50?x-50:camera;}
  function secretPlant(id,turn){let h=2166136261;for(const c of id+'|'+(turn||'initial'))h=Math.imul(h^c.charCodeAt(0),16777619)>>>0;return h%16===0?(h>>>4)%4:null;}
- const api={slots,sequentialSlots,orderedThreads,gardenName,matches,cropStage,CARE,stepWalker,stepWorld,followCamera,geometry,secretPlant};
+ const api={slots,sequentialSlots,orderedThreads,gardenName,matches,cropStage,CARE,stepWalker,stepWorld,followCamera,panCamera,geometry,secretPlant};
  if(typeof module!=='undefined')module.exports=api;else root.GardenModel=api;
 })(globalThis);

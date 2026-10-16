@@ -4,7 +4,7 @@ const {gardenName:normalizeGardenName}=require('./web/model.js');
 const {WIDTH,HEIGHT,EXPANDED,bounded,hitTest}=require('./desktop-model.cjs');
 app.setName('codex-garden-pet-v06');app.setPath('userData',path.join(app.getPath('appData'),'codex-garden-pet-v06'));
 const VERSION=require('./package.json').version,{upgradeExecutable}=require('./update-policy.cjs');
-const qa=process.argv.includes('--qa');if(qa)app.setPath('userData',path.join(app.getPath('temp'),'codex-garden-pet-qa-'+process.pid));
+const qa=process.argv.includes('--qa');if(qa)app.setPath('userData',fs.mkdtempSync(path.join(app.getPath('temp'),'codex-garden-pet-qa-')));
 const ownsLock=app.requestSingleInstanceLock({version:VERSION,executable:process.execPath});if(!ownsLock)app.quit();
 const qaWelcome=process.argv.includes('--qa-welcome');let readRequests=0;
 let accepted=qa&&!qaWelcome;try{if(!qaWelcome)accepted=accepted||JSON.parse(fs.readFileSync(path.join(app.getPath('userData'),'welcome.json'),'utf8')).accepted===true;}catch{}
@@ -48,6 +48,7 @@ if(ownsLock)app.whenReady().then(()=>{
  readline.createInterface({input:bridge.stdout}).on('line',line=>{try{const m=JSON.parse(line),p=pending.get(m.id);if(p){clearTimeout(p.timer);pending.delete(m.id);m.error?p.reject(Error(m.error)):p.resolve(m.result);}}catch{}});
  bridge.on('error',rejectPending);bridge.stdin.on('error',rejectPending);bridge.on('exit',()=>rejectPending(Error('本地读取程序已退出，请重启菜园。')));
  ipcMain.handle('garden:snapshot',()=>{if(!accepted)return {threads:[],inventory:{},error:null,connection:'welcome'};readRequests++;return rpc('snapshot');});ipcMain.handle('garden:harvest',(_,threadId,plantKind)=>{if(!accepted)throw Error('请先完成欢迎说明');return rpc('harvest',{threadId,plantKind});});
+ ipcMain.handle('garden:photo',()=>{if(qa)return null;setIgnore(false);return require('./photo-picker.cjs').pick({win,dialog,restore:()=>{win.hide();win.setFocusable(false);win.showInactive();updatePointer();}});});
  ipcMain.handle('garden:window',(_,action,value)=>{if(action==='editing'){if(value===true){manualPass=false;setIgnore(false);win.setFocusable(true);win.focus();}else{win.hide();win.setFocusable(false);win.showInactive();updatePointer();}return;}if(action==='name'){const name=normalizeGardenName(value);win.setTitle(name);tray?.setToolTip(name+' · 双击恢复交互');return;}if(action==='drag'&&value&&Number.isFinite(value.dx)&&Number.isFinite(value.dy)&&Math.abs(value.dx)<1000&&Math.abs(value.dy)<1000){const b=win.getBounds();moveBounded({...b,x:b.x+Math.round(value.dx),y:b.y+Math.round(value.dy)});return;}if(action==='start'){fs.mkdirSync(app.getPath('userData'),{recursive:true});fs.writeFileSync(path.join(app.getPath('userData'),'welcome.json'),JSON.stringify({accepted:true,version:VERSION}));accepted=true;return true;}if(action==='panel')return resizePanel(Boolean(value));if(action==='hide')win.hide();if(action==='pass'){manualPass=true;updatePointer();trayMenu();}if(action==='quit')app.quit();});
  ipcMain.handle('garden:open',async(_,id)=>{if(!/^[a-zA-Z0-9-]{1,80}$/.test(id))throw Error('无效聊天ID');await shell.openExternal('codex://threads/'+id);});
  ipcMain.on('garden:geometry',(_,data)=>{

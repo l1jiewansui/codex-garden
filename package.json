@@ -1,12 +1,12 @@
 {
   "name": "codex-garden",
-  "version": "0.10.0-rc.5",
+  "version": "0.10.0-rc.16",
   "private": true,
   "description": "本地 Codex 对话像素菜园",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "test": "python -m unittest discover -s tests -v && node tests/world.test.cjs && node tests/desktop.test.cjs && node tests/update.test.cjs",
+    "test": "python -m unittest discover -s tests -v && node tests/world.test.cjs && node tests/desktop.test.cjs && node tests/update.test.cjs && node tests/photo-picker.test.cjs",
     "pack": "python tools/package.py",
     "postinstall": "install-electron",
     "qa": "electron . --qa"

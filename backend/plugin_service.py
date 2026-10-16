@@ -2,7 +2,7 @@
 import json, os, subprocess, sys
 from pathlib import Path
 
-PLANTS=('胡萝卜','卷心菜','番茄','南瓜','玉米','茄子','草莓','向日葵','月光花','水晶菇','星灯草','黄金萝卜','月玉卷心菜','星露番茄','琥珀南瓜')
+PLANTS=('胡萝卜','卷心菜','番茄','南瓜','玉米','茄子','草莓','向日葵','月光花','水晶菇','星灯草','黄金萝卜','月玉卷心菜','星露番茄','琥珀南瓜','豌豆炮手','双荚炮手','火炬辣椒','铃铛蘑菇','捕虫花','星月莲')
 
 def consented():
     root=Path(os.environ.get('APPDATA',str(Path.home()/'AppData/Roaming')))

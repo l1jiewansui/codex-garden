@@ -17,7 +17,7 @@ class AdapterTests(unittest.TestCase):
         rows=[{'id':str(i),'updated_at':100-i} for i in range(30)]
         result=b.order_rows(rows,['29','3','missing'])
         self.assertEqual([r['id'] for r in result[:4]],['29','3','0','1'])
-        self.assertEqual(len(result),24)
+        self.assertEqual(len(result),30)
         rows[0]['updated_at']=999999
         self.assertEqual(b.order_rows(rows,['29','3','missing']),result)
 

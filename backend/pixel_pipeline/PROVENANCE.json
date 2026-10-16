@@ -1,0 +1,12 @@
+{
+  "source": "XiuXianPixelStudio/vendor/frame_ronin_mcp/lib",
+  "upstream": "https://github.com/GOODDAYDAY/FrameRonin-MCP",
+  "files": {
+    "mesh.py": "e504bcf257498f603a2d327aed53e11e6de0c52720cbda474fbaeb0e3ff0018b",
+    "pixelate_core.py": "9a37073f8274b390738ad3baa72c8c402305f981ed248115e8e0f408b24c5525",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "license": "LICENSE.txt",
+  "usage": "same pinned majority reducer as the existing pixel studio; fixed shared grid",
+  "commit": "dc31d2baf9ae32cb3faee6bf84d3456b37993cf7"
+}

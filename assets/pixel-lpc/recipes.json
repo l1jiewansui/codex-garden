@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 3,
+  "defaults": [
+    {
+      "name": "麦穗",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "field",
+        "face": "balanced",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "crop",
+        "hat": "straw",
+        "skin": "source",
+        "hair": "source",
+        "shirt": "source",
+        "coat": "source",
+        "beard": false
+      }
+    },
+    {
+      "name": "桃桃",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "petal",
+        "face": "soft",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "bob",
+        "hat": "none",
+        "skin": "source",
+        "hair": "source",
+        "shirt": "source",
+        "coat": "source",
+        "beard": false
+      }
+    },
+    {
+      "name": "夜蓝",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "night",
+        "face": "angular",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "shag",
+        "hat": "blue",
+        "skin": "source",
+        "hair": "source",
+        "shirt": "source",
+        "coat": "source",
+        "beard": false
+      }
+    }
+  ],
+  "extras": [
+    {
+      "name": "栗辫",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "petal",
+        "face": "soft",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "braid",
+        "hat": "none",
+        "skin": "source",
+        "hair": "dark_brown",
+        "shirt": "white",
+        "coat": "forest",
+        "beard": false
+      }
+    },
+    {
+      "name": "麦田帽",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "field",
+        "face": "small",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "crop",
+        "hat": "straw",
+        "skin": "source",
+        "hair": "blonde",
+        "shirt": "yellow",
+        "coat": "brown",
+        "beard": false
+      }
+    },
+    {
+      "name": "薄荷",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "night",
+        "face": "soft",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "shag",
+        "hat": "none",
+        "skin": "source",
+        "hair": "black",
+        "shirt": "sky",
+        "coat": "teal",
+        "beard": false
+      }
+    },
+    {
+      "name": "莓卷",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "petal",
+        "face": "round",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "curly",
+        "hat": "none",
+        "skin": "source",
+        "hair": "pink",
+        "shirt": "white",
+        "coat": "maroon",
+        "beard": false
+      }
+    },
+    {
+      "name": "银尾",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "field",
+        "face": "small",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "pony",
+        "hat": "none",
+        "skin": "source",
+        "hair": "white",
+        "shirt": "slate",
+        "coat": "blue",
+        "beard": false
+      }
+    },
+    {
+      "name": "老乔",
+      "recipe": {
+        "schemaVersion": 3,
+        "library": "classic",
+        "body": "night",
+        "face": "elder",
+        "nose": "natural",
+        "eyes": "source",
+        "style": "bald",
+        "hat": "none",
+        "skin": "bronze",
+        "hair": "dark_brown",
+        "shirt": "yellow",
+        "coat": "forest",
+        "beard": true
+      }
+    }
+  ]
+}

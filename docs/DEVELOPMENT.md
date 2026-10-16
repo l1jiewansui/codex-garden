@@ -1,6 +1,6 @@
 # codex-garden
 
-Windows 透明桌面伴侣，将本机 Codex 对话状态可视化为像素菜园。发布者 risu1，当前为 0.10.0-rc.1，已制作本地测试插件，尚未上架公共目录。
+Windows 透明桌面伴侣，将本机 Codex 对话状态可视化为像素菜园。发布者 risu1，开发版本以 package.json 为准，公共下载版本以 GitHub Releases 为准，尚未上架公共插件目录。
 
 使用说明见 README-PET.md，隐私说明见 PRIVACY.md。
 
@@ -29,3 +29,6 @@ npm start
 Codex 本地数据库使用只读连接，并检查字段；阅读状态冲突时不猜测。收藏格式支持从旧版记录迁移到版本1，写入由进程锁与原子替换保护。拒绝不识别的未来版本，避免错误降级覆盖。
 
 原始生图不进入发布包。资源来源和许可见各 assets/pixel-* 目录及 release/THIRD-PARTY-NOTICES.md。第三方清单、上架文案、官网和政策页面稿已准备；完整操作见 release/RELEASE-RUNBOOK.md。公开发布仍需真实政策/支持地址、发布身份与本地 MCP 资格、可信签名及外部 Windows 验证。verification/public-release-gate.json 是逐项检查结果，不用空值冒充已完成。
+
+
+园丁的 LibreSprite 分层工程、原作站姿与走路保留、照料动作对齐及运行时校验见 [园丁管线](GARDENER-PIPELINE.md)。

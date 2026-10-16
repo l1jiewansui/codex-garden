@@ -20,6 +20,8 @@ jobs:
       - run: node tests/world.test.cjs
       - run: node tests/desktop.test.cjs
       - run: node tests/update.test.cjs
+      - run: node tests/photo-picker.test.cjs
       - run: node --check main.cjs
       - run: node --check qa.cjs
       - run: node --check web/pet.js
+      - run: node --check web/gardener-studio.js

@@ -1,0 +1,17 @@
+{
+  "names": [
+    "豌豆炮手",
+    "双荚炮手",
+    "火炬辣椒",
+    "铃铛蘑菇",
+    "捕虫花",
+    "星月莲"
+  ],
+  "firstId": 15,
+  "frameSize": 28,
+  "frames": 6,
+  "rootY": 28,
+  "author": "risu1 / Codex Garden",
+  "method": "original pixel geometry, fixed-root scanline sway, no AI",
+  "sha256": "31b35d14f969c19b57a094e4d99c08f12d0a1936b0b867e39bda397af85c8386"
+}
